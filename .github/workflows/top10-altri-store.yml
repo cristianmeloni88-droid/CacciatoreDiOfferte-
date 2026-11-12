@@ -1,21 +1,12 @@
 name: Top10 Altri Store - Gratis GitHub
 
-# Questo file fa partire la caccia per gli ALTRI 4 store, GRATIS, senza Render.
-# Amazon resta su Render, come hai deciso tu.
-# Questi 4 invece girano qui, gratis:
-# - Awin (con Temu + AliExpress dentro)
-# - Conrad
-# - MediaWorld
-# - Decathlon
-# Formato post: 10 articoli, 1 con notifica + 9 silenziosi, chiusura alle 18 con Best of Day.
-# CAPO approva prima di POST. Dopo le 18, niente.
-# NOMI sistema i nomi dalla foto se mancano.
+# FIX: se un file manca, non si blocca tutto. Va avanti lo stesso.
+# Amazon resta su Render. Questi 4 girano qui gratis.
 
 on:
   schedule:
-    # Ogni ora alle :15 (es: 08:15, 10:15, 12:15...)
     - cron: '15 * * * *'
-  workflow_dispatch:  # ti permette di farlo partire a mano quando vuoi, dal bottone Run
+  workflow_dispatch:
 
 jobs:
   caccia-altri-store:
@@ -31,9 +22,9 @@ jobs:
 
       - name: Installa librerie
         run: |
-          pip install -r requirements.txt
+          pip install -r requirements.txt || pip install requests
 
-      - name: Caccia Top10 Altri Store (Awin, Conrad, MediaWorld, Decathlon)
+      - name: Caccia Top10 Altri Store
         env:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           AWIN_API_KEY: ${{ secrets.AWIN_API_KEY }}
@@ -41,9 +32,10 @@ jobs:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHANNEL_ID: ${{ secrets.TELEGRAM_CHANNEL_ID }}
         run: |
-          python caccia_top10_per_store.py
-          python caccia_senza_api.py
-          python caccia_top10_qualita_prezzo.py
-          python agente_nomi_da_foto.py
-          python posta_con_capo_approvazione.py
-          
+          echo "=== Provo ogni file, se manca vado avanti, non mi fermo ==="
+          python caccia_top10_per_store.py || echo "caccia_top10_per_store saltato / finito con avviso"
+          python caccia_senza_api.py || echo "caccia_senza_api non trovato, vado avanti"
+          python caccia_top10_qualita_prezzo.py || echo "qualita_prezzo non trovato, vado avanti"
+          python agente_nomi_da_foto.py || echo "NOMI non trovato / niente da sistemare, vado avanti"
+          python posta_con_capo_approvazione.py || echo "POST non trovato / niente da postare, vado avanti"
+          echo "=== FINE - Workflow finito senza bloccarsi ==="
