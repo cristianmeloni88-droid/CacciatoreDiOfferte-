@@ -1,0 +1,49 @@
+name: Top10 Altri Store - Gratis GitHub
+
+# Questo file fa partire la caccia per gli ALTRI 4 store, GRATIS, senza Render.
+# Amazon resta su Render, come hai deciso tu.
+# Questi 4 invece girano qui, gratis:
+# - Awin (con Temu + AliExpress dentro)
+# - Conrad
+# - MediaWorld
+# - Decathlon
+# Formato post: 10 articoli, 1 con notifica + 9 silenziosi, chiusura alle 18 con Best of Day.
+# CAPO approva prima di POST. Dopo le 18, niente.
+# NOMI sistema i nomi dalla foto se mancano.
+
+on:
+  schedule:
+    # Ogni ora alle :15 (es: 08:15, 10:15, 12:15...)
+    - cron: '15 * * * *'
+  workflow_dispatch:  # ti permette di farlo partire a mano quando vuoi, dal bottone Run
+
+jobs:
+  caccia-altri-store:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Scarica codice da GitHub
+        uses: actions/checkout@v4
+
+      - name: Installa Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Installa librerie
+        run: |
+          pip install -r requirements.txt
+
+      - name: Caccia Top10 Altri Store (Awin, Conrad, MediaWorld, Decathlon)
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          AWIN_API_KEY: ${{ secrets.AWIN_API_KEY }}
+          AWIN_PUBLISHER_ID: ${{ secrets.AWIN_PUBLISHER_ID }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHANNEL_ID: ${{ secrets.TELEGRAM_CHANNEL_ID }}
+        run: |
+          python caccia_top10_per_store.py
+          python caccia_senza_api.py
+          python caccia_top10_qualita_prezzo.py
+          python agente_nomi_da_foto.py
+          python posta_con_capo_approvazione.py
+          
