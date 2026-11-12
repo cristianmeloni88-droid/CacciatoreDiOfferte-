@@ -1,0 +1,15 @@
+Nome,Prezzo,Prezzo Vecchio,Categoria,Shop,Link Affiliato,Recensioni,Attivo,Agente
+Cuffie Bluetooth,29.90,89.90,elettronica,MediaWorld,https://example.com/cuffie,4.5,TRUE,MED
+Batteria LiFePO4 100Ah,189.00,249.00,batterie,Conrad,https://example.com/batteria,4.8,TRUE,CON
+Tenda 3 Persone,89.90,119.90,outdoor,Decathlon,https://example.com/tenda,4.6,TRUE,DEC
+Caricabatterie USB-C 65W,19.90,39.90,elettronica,Amazon,https://example.com/caricatore,4.7,TRUE,AMA
+Diodo Schottky 10A,4.90,9.90,componenti,Conrad,https://example.com/diodo,4.9,FALSE,CON
+Pannello Solare 100W,79.00,129.00,batterie,Awin,https://example.com/pannello,4.4,TRUE,AWI
+Power Bank 20000mAh,24.90,49.90,elettronica,Amazon,https://example.com/powerbank,4.6,TRUE,AMA
+TV 43 Pollici 4K,299.00,449.00,elettronica,MediaWorld,https://example.com/tv,4.5,TRUE,MED
+Zaino Trekking 50L,59.90,89.90,outdoor,Decathlon,https://example.com/zaino,4.7,TRUE,DEC
+Smartwatch Fitness,49.90,99.90,elettronica,Amazon,https://example.com/smartwatch,4.3,TRUE,AMA
+Inverter 1000W,89.00,149.00,batterie,Awin,https://example.com/inverter,4.5,TRUE,AWI
+Auricolari Wireless,15.90,39.90,elettronica,MediaWorld,https://example.com/auricolari,4.4,TRUE,MED
+Cavo Solare MC4,9.90,19.90,componenti,Conrad,https://example.com/cavo,4.8,TRUE,CON
+Bici Pieghevole,249.00,349.00,outdoor,Decathlon,https://example.com/bici,4.6,TRUE,DEC
