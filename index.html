@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="it"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SHARDAN AFFILIAZIONI | AFFILIATE MONITOR v2.4.1</title>
+<link rel="stylesheet" href="styles.css"></head>
+<body>
+<header><div class="logo">⬡ SHARDAN AFFILIAZIONI <span>| AFFILIATE MONITOR v2.4.1</span></div><div class="top-right"><span id="clock">UTC --:--:--</span> | CONNESSIONE SICURA | SESSION ID: 78-7-4332-A</div></header>
+<main>
+<aside class="left">
+<section class="card"><h3>📊 METRICHE OGGI</h3><div class="big">GUADAGNI OGGI <b id="guadagni">0 EUR</b></div><p>CLICK <b id="click">0</b> | VENDITE <b id="vendite">0</b></p><p>CONVERSIONE <b id="conv">0%</b></p></section>
+<section class="card"><h3>📈 VENDITE PER SHOP</h3><div id="shopBars"></div></section>
+<section class="card"><h3>🤖 SQUADRA IA - 10 AGENTI</h3><div id="agenti"></div></section>
+</aside>
+<section class="center">
+<div id="orb" title="Tocca per attivare Jarvis"><div class="ring r1"></div><div class="ring r2"></div><div class="core">JARVIS</div></div>
+<h1>SHARDAN BOT ONLINE</h1><p>STATO: ATTIVO • SINCRONIZZATO</p>
+<div id="jarvisDice">Tocca l'orb e di' "Ciao Jarvis"</div>
+<button onclick="attivaVoce()">🎤 ATTIVA VOCE</button>
+</section>
+<aside class="right">
+<section class="card"><h3>🔍 CACCIATORE ERRORI DI PREZZO</h3><div id="errori"></div></section>
+<section class="card"><h3>📦 PRODOTTI ATTIVI <b id="nProdotti">0</b></h3><div id="prodotti"></div></section>
+<section class="card"><h3>👥 UTENTI BOT <b id="utenti">1248</b></h3><button onclick="aggiungiUtente()">+1 Utente</button></section>
+<section class="card"><h3>✍️ POST IA</h3><select id="selProdotto"></select><button onclick="generaPost()">Genera 3 Post</button><div id="postOut"></div></section>
+<section class="card"><h3>👑 CAPO</h3><button onclick="riepilogoCapo()">Chiedi riepilogo a CAPO</button><div id="capoOut"></div></section>
+</aside>
+</main>
+<section class="form card"><h3>➕ Aggiungi Prodotto</h3>
+<input id="fNome" placeholder="Nome prodotto"><input id="fPrezzo" type="number" placeholder="Prezzo"><input id="fVecchio" type="number" placeholder="Prezzo vecchio">
+<select id="fShop"><option>Amazon</option><option>Awin</option><option>Conrad</option><option>MediaWorld</option><option>Decathlon</option><option>Temu</option><option>AliExpress</option></select>
+<input id="fComm" type="number" placeholder="Commissione %"><input id="fLink" placeholder="Link affiliato"><button onclick="aggiungiProdotto()">Aggiungi</button></section>
+<footer><div>🎤 BARRA COMANDI VOCALI - <span id="ascolto">IN ASCOLTO...</span> <span id="trascrizione"></span></div><div>● SISTEMA: ONLINE | SERVER: STABILE DATA CORE: 98,2%</div></footer>
+<script src="agenti.js"></script><script src="app.js"></script>
+</body></html>

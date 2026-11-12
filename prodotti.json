@@ -1,0 +1,222 @@
+[
+  {
+    "nome": "Cuffie Bluetooth",
+    "prezzo": 29.9,
+    "vecchio": 89.9,
+    "categoria": "elettronica",
+    "shop": "Amazon",
+    "link": "https://example.com/cuffie",
+    "commissione": 5,
+    "click": 42,
+    "vendite": 3
+  },
+  {
+    "nome": "Batteria LiFePO4",
+    "prezzo": 189,
+    "vecchio": 249,
+    "categoria": "batterie",
+    "shop": "Conrad",
+    "link": "https://example.com/batteria",
+    "commissione": 6,
+    "click": 35,
+    "vendite": 2
+  },
+  {
+    "nome": "Tenda Decathlon",
+    "prezzo": 89.9,
+    "vecchio": 119.9,
+    "categoria": "outdoor",
+    "shop": "Decathlon",
+    "link": "https://example.com/tenda",
+    "commissione": 5,
+    "click": 28,
+    "vendite": 2
+  },
+  {
+    "nome": "Auricolari Wireless Temu",
+    "prezzo": 12.9,
+    "vecchio": 29.9,
+    "categoria": "elettronica",
+    "shop": "Temu",
+    "link": "https://example.com/temu-auricolari",
+    "commissione": 10,
+    "click": 55,
+    "vendite": 4
+  },
+  {
+    "nome": "Lampada LED RGB Temu",
+    "prezzo": 9.9,
+    "vecchio": 24.9,
+    "categoria": "casa",
+    "shop": "Temu",
+    "link": "https://example.com/temu-lampada",
+    "commissione": 10,
+    "click": 30,
+    "vendite": 2
+  },
+  {
+    "nome": "Set Organizer Casa Temu",
+    "prezzo": 15.9,
+    "vecchio": 34.9,
+    "categoria": "casa",
+    "shop": "Temu",
+    "link": "https://example.com/temu-organizer",
+    "commissione": 10,
+    "click": 22,
+    "vendite": 1
+  },
+  {
+    "nome": "Orologio Smart AliExpress",
+    "prezzo": 19.9,
+    "vecchio": 49.9,
+    "categoria": "elettronica",
+    "shop": "AliExpress",
+    "link": "https://example.com/ali-orologio",
+    "commissione": 8,
+    "click": 48,
+    "vendite": 3
+  },
+  {
+    "nome": "Mini Proiettore AliExpress",
+    "prezzo": 39.9,
+    "vecchio": 99.9,
+    "categoria": "elettronica",
+    "shop": "AliExpress",
+    "link": "https://example.com/ali-proiettore",
+    "commissione": 8,
+    "click": 33,
+    "vendite": 1
+  },
+  {
+    "nome": "Tastiera Meccanica AliExpress",
+    "prezzo": 24.9,
+    "vecchio": 59.9,
+    "categoria": "elettronica",
+    "shop": "AliExpress",
+    "link": "https://example.com/ali-tastiera",
+    "commissione": 8,
+    "click": 27,
+    "vendite": 2
+  },
+  {
+    "nome": "TV 43 MediaWorld",
+    "prezzo": 299,
+    "vecchio": 399,
+    "categoria": "elettronica",
+    "shop": "MediaWorld",
+    "link": "https://example.com/tv",
+    "commissione": 4,
+    "click": 20,
+    "vendite": 1
+  },
+  {
+    "nome": "Smartphone Awin",
+    "prezzo": 199,
+    "vecchio": 259,
+    "categoria": "elettronica",
+    "shop": "Awin",
+    "link": "https://example.com/phone",
+    "commissione": 5,
+    "click": 18,
+    "vendite": 1
+  },
+  {
+    "nome": "Caricabatterie Conrad",
+    "prezzo": 24.9,
+    "vecchio": 34.9,
+    "categoria": "batterie",
+    "shop": "Conrad",
+    "link": "https://example.com/carica",
+    "commissione": 6,
+    "click": 15,
+    "vendite": 1
+  },
+  {
+    "nome": "Zaino Decathlon",
+    "prezzo": 34.9,
+    "vecchio": 49.9,
+    "categoria": "outdoor",
+    "shop": "Decathlon",
+    "link": "https://example.com/zaino",
+    "commissione": 5,
+    "click": 12,
+    "vendite": 0
+  },
+  {
+    "nome": "Diodo Kit Conrad",
+    "prezzo": 9.9,
+    "vecchio": 14.9,
+    "categoria": "componenti",
+    "shop": "Conrad",
+    "link": "https://example.com/diodo",
+    "commissione": 6,
+    "click": 10,
+    "vendite": 0
+  },
+  {
+    "nome": "Bici Decathlon",
+    "prezzo": 249,
+    "vecchio": 329,
+    "categoria": "outdoor",
+    "shop": "Decathlon",
+    "link": "https://example.com/bici",
+    "commissione": 5,
+    "click": 9,
+    "vendite": 0
+  },
+  {
+    "nome": "Cuffie MediaWorld",
+    "prezzo": 49.9,
+    "vecchio": 79.9,
+    "categoria": "elettronica",
+    "shop": "MediaWorld",
+    "link": "https://example.com/cuffie-mw",
+    "commissione": 4,
+    "click": 25,
+    "vendite": 1
+  },
+  {
+    "nome": "Tablet Awin",
+    "prezzo": 149,
+    "vecchio": 199,
+    "categoria": "elettronica",
+    "shop": "Awin",
+    "link": "https://example.com/tablet",
+    "commissione": 5,
+    "click": 14,
+    "vendite": 0
+  },
+  {
+    "nome": "Power Bank Amazon",
+    "prezzo": 19.9,
+    "vecchio": 29.9,
+    "categoria": "elettronica",
+    "shop": "Amazon",
+    "link": "https://example.com/powerbank",
+    "commissione": 5,
+    "click": 19,
+    "vendite": 1
+  },
+  {
+    "nome": "Speaker Amazon",
+    "prezzo": 39.9,
+    "vecchio": 59.9,
+    "categoria": "elettronica",
+    "shop": "Amazon",
+    "link": "https://example.com/speaker",
+    "commissione": 5,
+    "click": 16,
+    "vendite": 1
+  },
+  {
+    "nome": "Cuffie Errore Amazon",
+    "prezzo": 8.9,
+    "vecchio": 89.9,
+    "categoria": "elettronica",
+    "shop": "Amazon",
+    "link": "https://example.com/cuffie-errore",
+    "commissione": 5,
+    "click": 80,
+    "vendite": 0
+  }
+]
