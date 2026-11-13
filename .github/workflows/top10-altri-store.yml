@@ -33,6 +33,7 @@ jobs:
           TELEGRAM_CHANNEL_ID: ${{ secrets.TELEGRAM_CHANNEL_ID }}
         run: |
           echo "=== Provo ogni file, se manca vado avanti, non mi fermo ==="
+          python caccia_mediaworld_decathlon.py || echo "mediaworld_decathlon non trovato, vado avanti"
           python caccia_top10_per_store.py || echo "caccia_top10_per_store saltato / finito con avviso"
           python caccia_senza_api.py || echo "caccia_senza_api non trovato, vado avanti"
           python caccia_top10_qualita_prezzo.py || echo "qualita_prezzo non trovato, vado avanti"
