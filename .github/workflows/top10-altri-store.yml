@@ -1,12 +1,21 @@
 name: Top10 Altri Store - Gratis GitHub
 
+# Questo file fa partire la caccia per gli ALTRI 4 store, GRATIS, senza Render.
+# Amazon resta su Render a 7$ per questo mese, come hai deciso tu.
+# Questi 4 invece girano qui, gratis:
+# - Awin (con Temu + AliExpress dentro)
+# - Conrad
+# - MediaWorld
+# - Decathlon
+# Orari: ogni ora, ma con 15 minuti di ritardo rispetto a Render, cosi non si accavallano.
+# Formato post: 10 articoli, 1 con notifica + 9 silenziosi, chiusura alle 18 con Best of Day.
+# CAPO approva prima di POST. Dopo le 18, niente.
+
 on:
   schedule:
-    - cron: '0 9 * * *'
-    - cron: '0 11 * * *'
-    - cron: '0 13 * * *'
-    - cron: '0 15 * * *'
-  workflow_dispatch:
+    # Ogni ora alle :15 (es: 08:15, 10:15, 12:15...)
+    - cron: '15 * * * *'
+  workflow_dispatch:  # ti permette di farlo partire a mano quando vuoi, dal bottone Run
 
 jobs:
   caccia-altri-store:
@@ -21,22 +30,18 @@ jobs:
           python-version: '3.11'
 
       - name: Installa librerie
-        run: pip install requests
-
-      - name: Caccia Top10 Altri Store
-        env:
-          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-          AWIN_PUBLISHER_ID: ${{ secrets.AWIN_PUBLISHER_ID }}
-          AWIN_API_KEY: ${{ secrets.AWIN_API_KEY }}
         run: |
-          echo "=== Provo ogni file, se manca vado avanti, non mi fermo ==="
-          python caccia_awin_top10.py || echo "caccia_awin non partito, vado avanti"
-          echo "--- File creati ---"
-          ls -lh top10*.csv || echo "nessun top10 csv"
-          echo "--- NOMI: sistema nomi e prezzi ---"
-          python agente_nomi_da_foto.py || echo "NOMI non trovato, vado avanti"
-          echo "--- POST: manda su Telegram ---"
-          python posta_telegram_formato_shardan.py || echo "POST non trovato, niente da postare, vado avanti"
-          echo "=== Workflow finito senza bloccarsi ==="
-          
+          pip install -r requirements.txt
+
+      - name: Caccia Top10 Altri Store (Awin, Conrad, MediaWorld, Decathlon)
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          AWIN_API_KEY: ${{ secrets.AWIN_API_KEY }}
+          AWIN_PUBLISHER_ID: ${{ secrets.AWIN_PUBLISHER_ID }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHANNEL_ID: ${{ secrets.TELEGRAM_CHANNEL_ID }}
+        run: |
+          python caccia_top10_per_store.py
+          python caccia_senza_api.py
+          python caccia_top10_qualita_prezzo.py
+          python posta_con_capo_approvazione.py
