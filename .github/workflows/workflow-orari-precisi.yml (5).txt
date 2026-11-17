@@ -1,0 +1,105 @@
+name: CacciatoreDiOfferte - Orari Precisi
+
+on:
+  schedule:
+    - cron: '0 9 * * *'   # 10:00 italiane - VOGHION
+    - cron: '0 13 * * *'  # 14:00 italiane - MYLEAD App + Giochi
+    - cron: '0 15 * * *'  # 16:00 italiane - THUN
+    - cron: '0 17 * * *'  # 18:00 italiane - ALIEXPRESS (NUOVO!)
+    - cron: '0 19 * * *'  # 20:00 italiane - BAZTA
+  workflow_dispatch:
+
+jobs:
+  voghion-1000:
+    if: github.event.schedule == '0 9 * * *' || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.11' }
+      - run: pip install -r requirements.txt || pip install requests beautifulsoup4 || true
+      - name: Voghion 10:00 - 1 messaggio pulito
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHANNEL_ID: ${{ secrets.TELEGRAM_CHANNEL_ID }}
+          AWIN_PUBLISHER_ID: ${{ secrets.AWIN_PUBLISHER_ID }}
+          AWIN_API_KEY: ${{ secrets.AWIN_API_KEY }}
+          AWIN_FEED_VOGHION: ${{ secrets.AWIN_FEED_VOGHION }}
+        run: |
+          python caccia_feed.py voghion
+          python posta_store.py voghion
+
+  mylead-1400:
+    if: github.event.schedule == '0 13 * * *' || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.11' }
+      - run: pip install -r requirements.txt || pip install requests beautifulsoup4 || true
+      - name: MyLead 14:00 - 3 App + 3 Giochi
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHANNEL_ID: ${{ secrets.TELEGRAM_CHANNEL_ID }}
+          MYLEAD_API_KEY: ${{ secrets.MYLEAD_API_KEY }}
+          MYLEAD_USERNAME: ${{ secrets.MYLEAD_USERNAME }}
+          MYLEAD_PASSWORD: ${{ secrets.MYLEAD_PASSWORD }}
+          MYLEAD_TOP_MANUALE: ${{ secrets.MYLEAD_TOP_MANUALE }}
+          MYLEAD_TOP_MANUALE_GIOCHI: ${{ secrets.MYLEAD_TOP_MANUALE_GIOCHI }}
+        run: |
+          python auto_mylead_tipo.py app
+          python auto_mylead_tipo.py giochi
+
+  thun-1600:
+    if: github.event.schedule == '0 15 * * *' || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.11' }
+      - run: pip install -r requirements.txt || pip install requests beautifulsoup4 || true
+      - name: Thun 16:00 - 1 messaggio pulito
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHANNEL_ID: ${{ secrets.TELEGRAM_CHANNEL_ID }}
+          AWIN_PUBLISHER_ID: ${{ secrets.AWIN_PUBLISHER_ID }}
+          AWIN_API_KEY: ${{ secrets.AWIN_API_KEY }}
+        run: |
+          python caccia_scrape.py thun
+          python posta_store.py thun
+
+  aliexpress-1800:
+    if: github.event.schedule == '0 17 * * *' || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.11' }
+      - run: pip install -r requirements.txt || pip install requests beautifulsoup4 || true
+      - name: AliExpress 18:00 - 1 messaggio pulito
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHANNEL_ID: ${{ secrets.TELEGRAM_CHANNEL_ID }}
+          AWIN_PUBLISHER_ID: ${{ secrets.AWIN_PUBLISHER_ID }}
+          AWIN_API_KEY: ${{ secrets.AWIN_API_KEY }}
+        run: |
+          python caccia_scrape.py aliexpress
+          python posta_store.py aliexpress
+
+  bazta-2000:
+    if: github.event.schedule == '0 19 * * *' || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.11' }
+      - run: pip install -r requirements.txt || pip install requests beautifulsoup4 || true
+      - name: Bazta 20:00 - 1 messaggio pulito
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHANNEL_ID: ${{ secrets.TELEGRAM_CHANNEL_ID }}
+          AWIN_PUBLISHER_ID: ${{ secrets.AWIN_PUBLISHER_ID }}
+          AWIN_API_KEY: ${{ secrets.AWIN_API_KEY }}
+        run: |
+          python caccia_scrape.py bazta
+          python posta_store.py bazta
