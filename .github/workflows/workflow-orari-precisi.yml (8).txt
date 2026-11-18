@@ -1,0 +1,80 @@
+name: CacciatoreDiOfferte - Orari Precisi
+
+on:
+  schedule:
+    - cron: '0 9 * * *'   # 10:00 italiane - VOGHION
+    - cron: '0 13 * * *'  # 14:00 italiane - MYLEAD
+    - cron: '0 15 * * *'  # 16:00 italiane - THUN
+    - cron: '0 17 * * *'  # 18:00 italiane - ALIEXPRESS
+    - cron: '0 19 * * *'  # 20:00 italiane - BAZTA
+    - cron: '0 20 * * *'  # 21:00 italiane - DOCTORQUALITY
+  workflow_dispatch:
+
+jobs:
+  posta:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.11' }
+      - run: pip install -r requirements.txt || pip install requests beautifulsoup4 || true
+      - name: Posta in base all'ora italiana
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHANNEL_ID: ${{ secrets.TELEGRAM_CHANNEL_ID }}
+          AWIN_PUBLISHER_ID: ${{ secrets.AWIN_PUBLISHER_ID }}
+          AWIN_API_KEY: ${{ secrets.AWIN_API_KEY }}
+          AWIN_FEED_VOGHION: ${{ secrets.AWIN_FEED_VOGHION }}
+          AWIN_FEED_THUN: ${{ secrets.AWIN_FEED_THUN }}
+          AWIN_FEED_BAZTA: ${{ secrets.AWIN_FEED_BAZTA }}
+          AWIN_FEED_ALIEXPRESS: ${{ secrets.AWIN_FEED_ALIEXPRESS }}
+          AWIN_FEED_DOCTORQUALITY: ${{ secrets.AWIN_FEED_DOCTORQUALITY }}
+          MYLEAD_API_KEY: ${{ secrets.MYLEAD_API_KEY }}
+          MYLEAD_USERNAME: ${{ secrets.MYLEAD_USERNAME }}
+          MYLEAD_PASSWORD: ${{ secrets.MYLEAD_PASSWORD }}
+          MYLEAD_TOP_MANUALE: ${{ secrets.MYLEAD_TOP_MANUALE }}
+          MYLEAD_TOP_MANUALE_GIOCHI: ${{ secrets.MYLEAD_TOP_MANUALE_GIOCHI }}
+        run: |
+          python -c "
+          from datetime import datetime, timezone, timedelta
+          import os
+          ora_it = (datetime.now(timezone.utc) + timedelta(hours=1)).hour
+          print(f'Ora italiana: {ora_it}:00')
+          # Se è Run manuale, posta tutto per test - altrimenti solo il negozio di quell'ora
+          import sys
+          manuale = os.environ.get('GITHUB_EVENT_NAME') == 'workflow_dispatch'
+          print(f'Manuale: {manuale}')
+          "
+          # Se è manuale, posta tutto. Se è schedulato, il controllo ora lo fa lo script sotto
+          if [ "$GITHUB_EVENT_NAME" = "workflow_dispatch" ]; then
+            echo "=== TEST MANUALE: posto tutti i negozi ==="
+            python caccia_feed.py voghion; python posta_store.py voghion
+            python auto_mylead_tipo.py app; python auto_mylead_tipo.py giochi
+            python caccia_feed.py thun; python posta_store.py thun
+            python caccia_feed.py aliexpress; python posta_store.py aliexpress
+            python caccia_feed.py bazta; python posta_store.py bazta
+            python caccia_feed.py doctorquality; python posta_store.py doctorquality
+          else
+            echo "=== SCHEDULATO: posto solo il negozio di quest'ora ==="
+            python -c "
+            from datetime import datetime, timezone, timedelta
+            import subprocess, sys
+            ora = (datetime.now(timezone.utc) + timedelta(hours=1)).hour
+            print(f'Ora italiana: {ora}')
+            mappa = {10: ('voghion', 'feed'), 14: ('mylead', 'mylead'), 16: ('thun', 'feed'), 18: ('aliexpress', 'feed'), 20: ('bazta', 'feed'), 21: ('doctorquality', 'feed')}
+            # Tolleranza: se GitHub ritarda di qualche minuto, prendi l'ora più vicina
+            # Se ora è 15 ma è il run delle 16 (ritardo), controlla anche ora-1
+            # Per ora usa l'ora esatta
+            if ora in mappa:
+                store, tipo = mappa[ora]
+                print(f'Posto: {store}')
+                if tipo == 'mylead':
+                    subprocess.run([sys.executable, 'auto_mylead_tipo.py', 'app'])
+                    subprocess.run([sys.executable, 'auto_mylead_tipo.py', 'giochi'])
+                else:
+                    subprocess.run([sys.executable, 'caccia_feed.py', store])
+                    subprocess.run([sys.executable, 'posta_store.py', store])
+            else:
+                print(f'Nessun negozio per ora {ora}, salto')
+            "
+          fi
