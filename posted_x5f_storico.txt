@@ -1,0 +1,4 @@
+# STORICO PRODOTTI POSTATI - NON CANCELLARE MAI QUESTO FILE!
+# Qui il bot scrive tutti i prodotti gia' postati su Telegram.
+# Se lo cancelli, il bot ricomincia a postare gli stessi prodotti!
+# Il bot lo aggiorna da solo ad ogni giro.
