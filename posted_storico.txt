@@ -1,4 +1,49 @@
-# STORICO PRODOTTI POSTATI - NON CANCELLARE MAI QUESTO FILE!
-# Qui il bot scrive tutti i prodotti gia' postati su Telegram.
-# Se lo cancelli, il bot ricomincia a postare gli stessi prodotti!
 # Il bot lo aggiorna da solo ad ogni giro.
+# Qui il bot scrive tutti i prodotti gia' postati su Telegram.
+# STORICO PRODOTTI POSTATI - NON CANCELLARE MAI QUESTO FILE!
+# Se lo cancelli, il bot ricomincia a postare gli stessi prodotti!
+02bd070805a8e156
+0d75b0a9bb14a6ac
+12 3
+18a2c6c57a504bed
+2023 autunno
+24v rgb
+2885e520f121afd8
+2919ecc26d44e20c
+44be000318ff06e8
+51a06173eb03d5f6
+93f98c9482930d71
+96f494684bb6b1f4
+a0804be344b4c6cf
+bcc7e5db6eb2579f
+booiu adattatore
+c8337c96ca1749ef
+cuscino schienale
+dernord 2
+e45d5b82b6c20ca8
+eb1b6939a8f0db6d
+eb3899c1774e4b50
+gaminja rgb
+https://ae-pic-a1.aliexpress-media.com/kf/E0378d5febb8f4621ad7ff7aad3989ca4C.jpg
+https://ae-pic-a1.aliexpress-media.com/kf/S03f8a6d9300f4df58b7e9e2667d1bbe99.jpg
+https://ae-pic-a1.aliexpress-media.com/kf/S41139fd42d504c01ad4fd29d4aae8b39Q.png
+https://ae-pic-a1.aliexpress-media.com/kf/S483de10c802841caa13ff243dbd1fa33K.jpg
+https://ae-pic-a1.aliexpress-media.com/kf/S48d1c553387f4a36a055b36b8b6c9346e.png
+https://ae-pic-a1.aliexpress-media.com/kf/S537249f1c7cc41f585786a525829a579P.jpg
+https://ae-pic-a1.aliexpress-media.com/kf/S588401bbe3f34f14aa3f2031116f5e97s.jpg
+https://ae-pic-a1.aliexpress-media.com/kf/S5af96c5907e24e6c823edd2fc05aebefo.jpg
+https://ae-pic-a1.aliexpress-media.com/kf/S9584ae8600b34859aaff89c56326bd70D.png
+https://ae-pic-a1.aliexpress-media.com/kf/S9735cbc7d2a245cc8feb5f282a1bdb31m.jpg
+https://ae-pic-a1.aliexpress-media.com/kf/S9c90ef8b2f164de3b05b170bbb541dbau.png
+https://ae-pic-a1.aliexpress-media.com/kf/Sa9521f5815824987ab426e180fb17567t.jpg
+https://ae-pic-a1.aliexpress-media.com/kf/Sc4b0a5ad5f9d466c91fe2e8115808262r.jpg
+https://ae-pic-a1.aliexpress-media.com/kf/Se3c1e68cd3b340b6b6fd3ae465dc3345N.jpg
+https://ae-pic-a1.aliexpress-media.com/kf/See2352e8ad3f41958a5fb08b0f1a0087H.png
+macchina fiamme
+manopola gomexus
+oculare zoom
+songmics scala
+tendicatena husqvarna
+tester della
+vevor comando
+xiaomi roidmi
