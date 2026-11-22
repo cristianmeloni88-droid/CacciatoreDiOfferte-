@@ -179,6 +179,7 @@ def main():
             off = off_base
         print(f"Rotazione giorno {giorno}: offset {off} per {STORE} (su {len(out)} prodotti)")
         out_offset = out[off:] if len(out)>off else out
+        import os as _os  # FIX: deve stare PRIMA di usare _os, altrimenti Python dice UnboundLocalError!
         # ANTI-DOPPIO PERSISTENTE: salta prodotti gia' postati nei giorni scorsi (file nel repo)!
         # posted_storico.txt resta su GitHub, quindi Voghion di oggi non ripete Bazta di ieri!
         storico=set()
@@ -189,7 +190,6 @@ def main():
             except: pass
         # ANTI-DOPPIO NELLA STESSA RUN: se fai 'posta tutti', il 2o negozio salta i prodotti gia' postati dal 1o!
         # Legge file condiviso posted_oggi.txt (esiste solo nella stessa run, stesso runner)
-        import os as _os
         gia_postati=set()
         if _os.path.exists("posted_oggi.txt"):
             try:
