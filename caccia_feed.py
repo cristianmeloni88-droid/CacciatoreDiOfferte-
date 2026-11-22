@@ -260,7 +260,6 @@ def main():
                         _fs.write(base_prodotto(_p["nome"])+"\n")
                         _fs.write(str(_p.get("img","")).split("?")[0]+"\n")
             except: pass
-            except: pass
             print(f"Salvato {fn} - {len(top)} offerte DIVISE PER CATEGORIA!")
             for p in top: print(f"  - [{p.get('categoria')}] {p['nome'][:50]} | {p['prezzo']}€ sconto {p['sconto']}%")
             return
