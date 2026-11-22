@@ -19,8 +19,13 @@ on:
 jobs:
   posta:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          token: ${{ secrets.GITHUB_TOKEN }}
       - uses: actions/setup-python@v5
         with: { python-version: '3.11' }
       - run: pip install -r requirements.txt || pip install requests beautifulsoup4 || true
@@ -78,12 +83,26 @@ jobs:
         if: always()
         run: |
           if [ -f posted_storico.txt ]; then
+            echo "Storico trovato: $(wc -l < posted_storico.txt) righe"
             git config user.name "cacciatore-bot"
             git config user.email "bot@cacciatore.local"
-            git pull --rebase || true
+            # Salva le modifiche locali, scarica quelle nuove, unisci
+            git stash push -m "storico-temp" -- posted_storico.txt || true
+            git pull --rebase || git pull || true
+            git stash pop || true
+            # Se ci sono conflitti, unisci le righe e togli duplicati
+            if [ -f posted_storico.txt ]; then
+              sort -u posted_storico.txt -o posted_storico.txt || true
+            fi
             git add posted_storico.txt || true
             git commit -m "Aggiorno storico prodotti - anti-duplicati" || echo "Niente da salvare"
-            git push || echo "Push storico fallito"
+            git push || (git pull --rebase && git push) || echo "Push storico fallito - riprovo al prossimo giro"
           else
-            echo "Nessuno storico"
+            echo "Nessuno storico - creo file vuoto"
+            echo "# storico prodotti postati - NON cancellare!" > posted_storico.txt
+            git config user.name "cacciatore-bot"
+            git config user.email "bot@cacciatore.local"
+            git add posted_storico.txt || true
+            git commit -m "Creo storico" || true
+            git push || true
           fi
