@@ -74,3 +74,16 @@ jobs:
           else:
               print(f'Nessuna fascia entro 90 min: ora {ora}:{minuto:02d}, salto per non duplicare')
           "
+      - name: Salva storico anti-duplicati su GitHub
+        if: always()
+        run: |
+          if [ -f posted_storico.txt ]; then
+            git config user.name "cacciatore-bot"
+            git config user.email "bot@cacciatore.local"
+            git pull --rebase || true
+            git add posted_storico.txt || true
+            git commit -m "Aggiorno storico prodotti - anti-duplicati" || echo "Niente da salvare"
+            git push || echo "Push storico fallito"
+          else
+            echo "Nessuno storico"
+          fi
