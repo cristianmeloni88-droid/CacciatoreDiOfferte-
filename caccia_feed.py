@@ -156,7 +156,7 @@ def main():
             bb=base_prodotto(nome)
             if any(base_prodotto(x["nome"])==bb for x in out): continue
             out.append({"nome":str(nome)[:150],"prezzo":prezzo,"vecchio":vecchio or "","sconto":sconto,"link":link,"img":img,"store":NOMI.get(STORE,STORE),"asin":"","stelle":"4.5","categoria":categoria_di(nome, cat_raw)})
-            if len(out)>2000: break
+            if len(out)>15000: break
         print(f"Prodotti validi: {len(out)} su {n} letti")
         # Se tutti hanno sconto 0 (feed senza colonna sconto), ordina per prezzo basso
         if out and all(float(x["sconto"] or 0)==0 for x in out):
@@ -177,53 +177,66 @@ def main():
             off = (giorno * 100 + off_base) % max(1, len(out)-15)
         else:
             off = off_base
-        print(f"Rotazione giorno {giorno}: offset {off} per {STORE} (su {len(out)} prodotti)")
-        out_offset = out[off:] if len(out)>off else out
-        import os as _os  # FIX: deve stare PRIMA di usare _os, altrimenti Python dice UnboundLocalError!
-        # ANTI-DOPPIO PERSISTENTE: salta prodotti gia' postati nei giorni scorsi (file nel repo)!
-        # posted_storico.txt resta su GitHub, quindi Voghion di oggi non ripete Bazta di ieri!
+        # === FIX DEFINITIVO ANTI-DUPLICATI 22 NOV SERA ===
+        # 1. Carica storico (prodotti gia' postati in passato, da GitHub)
+        # 2. Filtra SUBITO out, PRIMA di calcolare offset!
+        # 3. MAI tornare a out originale! Se finiscono i nuovi, non postare duplicati!
+        import os as _os
+        import hashlib
+        def chiave_unica(prod):
+            # Chiave FORTE: nome completo + foto + link - non solo 2 parole!
+            n = norm_nome(prod.get("nome",""))
+            img = str(prod.get("img","")).split("?")[0].lower().strip()
+            # Hash della foto: stessa foto = stesso prodotto anche se nome cambia!
+            h = hashlib.md5((n + "|" + img).encode("utf-8", errors="ignore")).hexdigest()[:16]
+            return h
         storico=set()
+        storico_img=set()
         if _os.path.exists("posted_storico.txt"):
             try:
-                storico=set(open("posted_storico.txt",encoding="utf-8").read().splitlines())
-                print(f"Storico: {len(storico)} prodotti gia' postati in passato - li salto tutti!")
-            except: pass
-        # ANTI-DOPPIO NELLA STESSA RUN: se fai 'posta tutti', il 2o negozio salta i prodotti gia' postati dal 1o!
-        # Legge file condiviso posted_oggi.txt (esiste solo nella stessa run, stesso runner)
+                for _riga in open("posted_storico.txt",encoding="utf-8").read().splitlines():
+                    _riga=_riga.strip()
+                    if not _riga: continue
+                    if _riga.startswith("http"):
+                        storico_img.add(_riga.split("?")[0].lower())
+                    else:
+                        storico.add(_riga)
+                print(f"Storico caricato: {len(storico)} chiavi + {len(storico_img)} foto gia' postate - le salto TUTTE!")
+            except Exception as _e:
+                print(f"Errore lettura storico: {_e}")
         gia_postati=set()
         if _os.path.exists("posted_oggi.txt"):
             try:
                 gia_postati=set(open("posted_oggi.txt",encoding="utf-8").read().splitlines())
-                print(f"Gia' postati oggi in questa run: {len(gia_postati)} - li salto!")
+                print(f"Gia' postati oggi in questa run: {len(gia_postati)}")
             except: pass
-        # Filtra out_offset togliendo quelli gia' postati oggi
-        # FILTRO STORICO: togli da out tutto quello gia' postato in passato
-        if storico:
-            out_storico=[]
-            for _p in out:
-                _chiave_storico = base_prodotto(_p["nome"])
-                _img_storico = str(_p.get("img","")).split("?")[0].lower()
-                if _chiave_storico in storico: continue
-                # Controlla anche per immagine (stesso prodotto, nome leggermente diverso!)
-                if any(_img_storico==str(s).split("?")[0].lower() for s in storico if s.startswith("http")): continue
-                out_storico.append(_p)
-            print(f"Dopo filtro STORICO: {len(out_storico)} rimasti su {len(out)} - tolti {len(out)-len(out_storico)} duplicati vecchi!")
-            if len(out_storico) >= 15:
-                out = out_storico
-            else:
-                print("ATTENZIONE: storico troppo grande, tengo comunque i migliori e azzero storico parziale")
-                # Se abbiamo filtrato troppo, teniamo out originale ma con offset diverso
-                pass
-        if gia_postati:
-            out_filtrato=[]
-            for _p in out_offset:
-                _chiave = base_prodotto(_p["nome"])
-                if _chiave in gia_postati: continue
-                out_filtrato.append(_p)
-            print(f"Dopo filtro gia' postati: {len(out_filtrato)} rimasti su {len(out_offset)}")
-            out_offset = out_filtrato if out_filtrato else out_offset
+        # FILTRO VERO: togli da out TUTTO quello gia' visto - per nome, per foto, per chiave!
+        out_fresco=[]
+        tolti=0
+        for _p in out:
+            _k = chiave_unica(_p)
+            _img2 = str(_p.get("img","")).split("?")[0].lower()
+            _base2 = base_prodotto(_p.get("nome",""))
+            if _k in storico or _k in gia_postati: tolti+=1; continue
+            if _img2 in storico_img: tolti+=1; continue
+            if _base2 in storico or _base2 in gia_postati: tolti+=1; continue
+            out_fresco.append(_p)
+        print(f"FILTRO STORICO VERO: {len(out_fresco)} freschi rimasti su {len(out)} - tolti {tolti} duplicati!")
+        # Usa SOLO out_fresco da ora in poi! MAI out originale!
+        out = out_fresco
+        if len(out) < 15:
+            print(f"ATTENZIONE: solo {len(out)} prodotti freschi rimasti! Posto solo quelli, NON duplico!")
+            # Non tornare indietro! Posta solo quelli freschi, anche se sono meno di 15!
+        # Ora calcola offset SULLA LISTA FILTRATA, non su quella vecchia!
+        print(f"Rotazione giorno {giorno}: offset {off} per {STORE} (su {len(out)} prodotti FRESCHI)")
+        # Mescola con seed giorno+negozio così ogni giorno è diverso ma non casuale a caso
+        import random as _rnd
+        _seed = int(hashlib.md5(f"{STORE}-{giorno}".encode()).hexdigest()[:8], 16)
+        _rnd.seed(_seed)
+        _rnd.shuffle(out)
+        out_offset = out  # Dopo shuffle, prendi dall'inizio - sono tutti freschi!
         # DIVIDI PER CATEGORIA: prendi max 3 per categoria, totale 15 - così sono vari!
-        if len(out_offset) > 30:
+        if len(out_offset) > 5:
             # Raggruppa per categoria
             from collections import defaultdict
             per_cat=defaultdict(list)
@@ -239,10 +252,19 @@ def main():
                     if len(per_cat[c])>idx:
                         top.append(per_cat[c][idx])
                 idx+=1
-            # Se non bastano, riempi con i primi
-            for x in out:
+            # Se non bastano, riempi SOLO con prodotti freschi, MAI con vecchi!
+            for x in out_offset:
                 if len(top)>=15: break
                 if x not in top: top.append(x)
+            # ULTIMO CONTROLLO: togli eventuali duplicati dentro top stesso (stessa foto)
+            _viste_foto=set()
+            _top_pulito=[]
+            for _p in top:
+                _f = str(_p.get("img","")).split("?")[0].lower()
+                if _f in _viste_foto: continue
+                _viste_foto.add(_f)
+                _top_pulito.append(_p)
+            top=_top_pulito
             print(f"Categorie trovate: {list(per_cat.keys())} - Top 15 divisi per categoria!")
             # Salva subito
             fn=f"top10_{STORE}.csv"
@@ -257,6 +279,7 @@ def main():
                 # STORICO PERSISTENTE: salva base + immagine, così domani li riconosce anche se cambia negozio!
                 with open("posted_storico.txt","a",encoding="utf-8") as _fs:
                     for _p in top:
+                        _fs.write(chiave_unica(_p)+"\n")
                         _fs.write(base_prodotto(_p["nome"])+"\n")
                         _fs.write(str(_p.get("img","")).split("?")[0]+"\n")
             except: pass
@@ -288,6 +311,7 @@ def main():
                     _f.write(base_prodotto(_p["nome"])+"\n")
             with open("posted_storico.txt","a",encoding="utf-8") as _fs:
                 for _p in top:
+                    _fs.write(chiave_unica(_p)+"\n")
                     _fs.write(base_prodotto(_p["nome"])+"\n")
                     _fs.write(str(_p.get("img","")).split("?")[0]+"\n")
         except: pass
