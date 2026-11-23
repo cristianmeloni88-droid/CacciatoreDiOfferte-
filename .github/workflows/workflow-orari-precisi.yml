@@ -2,107 +2,82 @@ name: CacciatoreDiOfferte - Orari Precisi
 
 on:
   schedule:
-    - cron: '0 9 * * *'   # 10:00 IT - VOGHION
-    - cron: '0 11 * * *'  # 12:00 IT - DOCTORQUALITY
-    - cron: '0 13 * * *'  # 14:00 IT - NATUGEA
-    - cron: '0 15 * * *'  # 16:00 IT - THUN
-    - cron: '0 17 * * *'  # 18:00 IT - ALIEXPRESS
-    - cron: '0 19 * * *'  # 20:00 IT - BAZTA
-    - cron: '0 21 * * *'  # 22:00 IT - IMOU
+    - cron: '0 9 * * *'   # 10:00 italiane - VOGHION
+    - cron: '0 13 * * *'  # 14:00 italiane - MYLEAD App + Giochi
+    - cron: '0 15 * * *'  # 16:00 italiane - THUN
+    - cron: '0 19 * * *'  # 20:00 italiane - BAZTA
   workflow_dispatch:
-    inputs:
-      store:
-        description: 'Quale negozio testare? (vuoto = tutti)'
-        required: false
-        default: ''
 
 jobs:
-  posta:
+  voghion-1000:
+    if: github.event.schedule == '0 9 * * *' || github.event_name == 'workflow_dispatch'
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
     steps:
       - uses: actions/checkout@v4
-        with:
-          fetch-depth: 1
-          token: ${{ secrets.GITHUB_TOKEN }}
       - uses: actions/setup-python@v5
         with: { python-version: '3.11' }
-      - run: pip install -r requirements.txt || pip install requests beautifulsoup4 || true
-      - name: Posta in base all'ora italiana
+      - run: pip install requests || true
+      - name: Voghion 10:00 - 10 offerte
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHANNEL_ID: ${{ secrets.TELEGRAM_CHANNEL_ID }}
           AWIN_PUBLISHER_ID: ${{ secrets.AWIN_PUBLISHER_ID }}
           AWIN_API_KEY: ${{ secrets.AWIN_API_KEY }}
-          AWIN_FEED_VOGHION: ${{ secrets.AWIN_FEED_VOGHION }}
-          AWIN_FEED_THUN: ${{ secrets.AWIN_FEED_THUN }}
-          AWIN_FEED_BAZTA: ${{ secrets.AWIN_FEED_BAZTA }}
-          AWIN_FEED_ALIEXPRESS: ${{ secrets.AWIN_FEED_ALIEXPRESS }}
-          AWIN_FEED_DOCTORQUALITY: ${{ secrets.AWIN_FEED_DOCTORQUALITY }}
-          AWIN_FEED_NATUGEA: ${{ secrets.AWIN_FEED_NATUGEA }}
-          AWIN_FEED_IMOU: ${{ secrets.AWIN_FEED_IMOU }}
-          INPUT_STORE: ${{ inputs.store }}
         run: |
-          python -c "
-          from datetime import datetime, timezone, timedelta
-          import subprocess, sys, os
-          ora_dt = datetime.now(timezone.utc) + timedelta(hours=1)
-          ora = ora_dt.hour
-          minuto = ora_dt.minute
-          minuti_ora = ora*60 + minuto
-          print(f'Ora italiana: {ora}:{minuto:02d}')
-          store_forzato = os.environ.get('INPUT_STORE','').strip().lower()
-          if os.environ.get('GITHUB_EVENT_NAME') == 'workflow_dispatch' and store_forzato:
-              print(f'TEST manuale solo: {store_forzato}')
-              subprocess.run([sys.executable, 'caccia_feed.py', store_forzato])
-              subprocess.run([sys.executable, 'posta_store.py', store_forzato])
-              sys.exit(0)
-          if os.environ.get('GITHUB_EVENT_NAME') == 'workflow_dispatch' and not store_forzato:
-              print('TEST manuale: posto tutti')
-              for s in ['voghion','doctorquality','natugea','thun','aliexpress','bazta','imou']:
-                  subprocess.run([sys.executable, 'caccia_feed.py', s])
-                  subprocess.run([sys.executable, 'posta_store.py', s])
-              sys.exit(0)
-          fasce = [(10*60, 'voghion'), (12*60, 'doctorquality'), (14*60, 'natugea'), (16*60, 'thun'), (18*60, 'aliexpress'), (20*60, 'bazta'), (22*60, 'imou')]
-          scelto = None
-          for fascia_min, store in fasce:
-              diff = minuti_ora - fascia_min
-              if 0 <= diff <= 90:
-                  scelto = (store, diff)
-                  break
-          if scelto:
-              store, diff = scelto
-              print(f'Posto: {store} (ritardo {diff} min, dentro tolleranza 90 min)')
-              subprocess.run([sys.executable, 'caccia_feed.py', store])
-              subprocess.run([sys.executable, 'posta_store.py', store])
-          else:
-              print(f'Nessuna fascia entro 90 min: ora {ora}:{minuto:02d}, salto per non duplicare')
-          "
-      - name: Salva storico anti-duplicati su GitHub
-        if: always()
+          python caccia_store.py voghion
+          python posta_store.py voghion
+
+  mylead-1400:
+    if: github.event.schedule == '0 13 * * *' || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.11' }
+      - run: pip install requests || true
+      - name: MyLead 14:00 - 3 App + 3 Giochi
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHANNEL_ID: ${{ secrets.TELEGRAM_CHANNEL_ID }}
+          MYLEAD_API_KEY: ${{ secrets.MYLEAD_API_KEY }}
+          MYLEAD_TOP_MANUALE: ${{ secrets.MYLEAD_TOP_MANUALE }}
+          MYLEAD_TOP_MANUALE_GIOCHI: ${{ secrets.MYLEAD_TOP_MANUALE_GIOCHI }}
         run: |
-          if [ -f posted_storico.txt ]; then
-            echo "Storico trovato: $(wc -l < posted_storico.txt) righe"
-            git config user.name "cacciatore-bot"
-            git config user.email "bot@cacciatore.local"
-            # Salva le modifiche locali, scarica quelle nuove, unisci
-            git stash push -m "storico-temp" -- posted_storico.txt || true
-            git pull --rebase || git pull || true
-            git stash pop || true
-            # Se ci sono conflitti, unisci le righe e togli duplicati
-            if [ -f posted_storico.txt ]; then
-              sort -u posted_storico.txt -o posted_storico.txt || true
-            fi
-            git add posted_storico.txt || true
-            git commit -m "Aggiorno storico prodotti - anti-duplicati" || echo "Niente da salvare"
-            git push || (git pull --rebase && git push) || echo "Push storico fallito - riprovo al prossimo giro"
-          else
-            echo "Nessuno storico - creo file vuoto"
-            echo "# storico prodotti postati - NON cancellare!" > posted_storico.txt
-            git config user.name "cacciatore-bot"
-            git config user.email "bot@cacciatore.local"
-            git add posted_storico.txt || true
-            git commit -m "Creo storico" || true
-            git push || true
-          fi
+          python auto_mylead_tipo.py app
+          python auto_mylead_tipo.py giochi
+
+  thun-1600:
+    if: github.event.schedule == '0 15 * * *' || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.11' }
+      - run: pip install requests || true
+      - name: Thun 16:00 - 10 offerte
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHANNEL_ID: ${{ secrets.TELEGRAM_CHANNEL_ID }}
+          AWIN_PUBLISHER_ID: ${{ secrets.AWIN_PUBLISHER_ID }}
+          AWIN_API_KEY: ${{ secrets.AWIN_API_KEY }}
+        run: |
+          python caccia_store.py thun
+          python posta_store.py thun
+
+  bazta-2000:
+    if: github.event.schedule == '0 19 * * *' || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.11' }
+      - run: pip install requests || true
+      - name: Bazta 20:00 - 10 offerte
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHANNEL_ID: ${{ secrets.TELEGRAM_CHANNEL_ID }}
+          AWIN_PUBLISHER_ID: ${{ secrets.AWIN_PUBLISHER_ID }}
+          AWIN_API_KEY: ${{ secrets.AWIN_API_KEY }}
+        run: |
+          python caccia_store.py bazta
+          python posta_store.py bazta
