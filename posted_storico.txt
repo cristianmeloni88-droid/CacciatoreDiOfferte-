@@ -3,6 +3,7 @@
 # STORICO PRODOTTI POSTATI - NON CANCELLARE MAI QUESTO FILE!
 # Se lo cancelli, il bot ricomincia a postare gli stessi prodotti!
 004ec393a6c746c5
+01d9d1e7b332286b
 02bd070805a8e156
 030cdca80ae0482a
 0a43db30995bbef0
@@ -12,6 +13,7 @@
 0e143e7a44a01132
 0ef2a413658effcb
 1 18
+1 chiavi
 12 3
 12029a515d3bc22e
 12721590935c83a3
@@ -32,6 +34,7 @@
 2d48ca6c9e4cdbd2
 2e563078b0d9b658
 2f45a58186025ed8
+3018e1ca511d4e1a
 30836e518e463e3a
 333868f7afc87f00
 33b745e3e8c7253d
@@ -43,13 +46,16 @@
 4447bce51d1797a2
 44adb257fa6e3f30
 44be000318ff06e8
+4b2dcede8f6cddc4
 4b437eb01663d5ce
 4e12726e407d8403
 50d6c24862ce36dd
 51a06173eb03d5f6
+5306af5d800242d3
 5458e5be499d7245
 55b06a5e699ab3a3
 57edf2884641a5c9
+5cb868ebb1079117
 5df4d7f7569b6c68
 5e6a765ef9d7d6bb
 5eff0546da100898
@@ -61,9 +67,12 @@
 71ab2767e181840a
 7239e1382ebd0ce7
 73d8e6856e3a2307
+744103d14444b7ac
 76a26ca6f901f68c
 7a15eb1d18c1d6cd
+7d58605597f89f11
 7db2406d0537cf40
+8005b39114e7fd99
 835be9d7736be155
 89fd194daf5ad30c
 8d5095387b495e5c
@@ -78,6 +87,7 @@
 93f98c9482930d71
 96ce8347493f054a
 96f494684bb6b1f4
+986f5572358072e8
 98d485866cc27254
 996768546f81a48d
 998246877b4472d9
@@ -93,10 +103,12 @@ a3faf37360216d23
 a4f1e055454d5a1b
 a57aa2189ff95f81
 a8a8c2bd0238cb29
+a942613cd70eb113
 aaa66de0f56918ee
 aabcecc566fdc04e
 abff04528b3e8596
 accappatoio taglia
+adattatore barilotto
 afaad4eb674fa248
 affetta carne
 anello basic
@@ -113,6 +125,7 @@ b43ff93afa6b15b9
 b4d84b00b9621e38
 b52fb9589390f648
 b7309008f5a82280
+b747b19a74226d80
 ba73fd667b381811
 bcc7e5db6eb2579f
 betacarotene acceleratore
@@ -126,15 +139,18 @@ borsa porta
 bracci controllo
 bromelina 5000
 bulb cam
+c205714e0bb15530
 c22aeff799851ae1
 c56d9f7249cd06b1
 c57932f01150c8a4
+c5f302c959ac1325
 c605a05ad40b7e76
 c8337c96ca1749ef
 c8debe0f76116a55
 carrello campeggio
 casa kit
 casco protettivo
+case fanxiang
 cell pt
 cfd61cb9b57f3ce9
 ciclette casa
@@ -144,12 +160,14 @@ continental 700c
 crema viso
 cuffie stereo
 cuscino schienale
+d004f5f11dabd226
 d3d05a9c351b0f00
 d4904a8889ae3865
 d79486c15b995548
 d7c58cb71ac07e7a
 d86d4213a27fe166
 d8be36da66337381
+d8c62527d9020c42
 dc1395079ba346a6
 dcc540b5bbe7f6dc
 de2accefa63696e4
@@ -184,6 +202,7 @@ fb2aae4037103db9
 fddf7b28682ad078
 felpe sportive
 filamento petg
+filamento stampante
 focolare
 frullatore frutta
 gaminja rgb
@@ -191,28 +210,35 @@ gatto momi
 gerimport base
 giacca revit
 giocattolo peluche
+giochi nintendo
 gioco unisci
 glucomannano zerofame
+goldix 36t
 hiby r4
 https://ae-pic-a1.aliexpress-media.com/kf/Acf19d937f9f54220805651d4988d3424m.jpg
 https://ae-pic-a1.aliexpress-media.com/kf/E0378d5febb8f4621ad7ff7aad3989ca4C.jpg
 https://ae-pic-a1.aliexpress-media.com/kf/E2afbf91e468c4419a7279ef46cac9f75I.png
+https://ae-pic-a1.aliexpress-media.com/kf/E3c081e66874b4bdbb1bf53347d67f651u.jpg
 https://ae-pic-a1.aliexpress-media.com/kf/E48251863f17b415d9b9af26474528ac7H.jpg
 https://ae-pic-a1.aliexpress-media.com/kf/E66995a29973840afa83644f5cdbf48a0O.jpg
 https://ae-pic-a1.aliexpress-media.com/kf/H202cd72fb8df40869ace4339c28ccef92.jpg
 https://ae-pic-a1.aliexpress-media.com/kf/S03f8a6d9300f4df58b7e9e2667d1bbe99.jpg
 https://ae-pic-a1.aliexpress-media.com/kf/S0421636400b74e998c6cd87f1940123cz.jpg
 https://ae-pic-a1.aliexpress-media.com/kf/S06e026604e154b70b2607103284a81c5d.jpg
+https://ae-pic-a1.aliexpress-media.com/kf/S0c2c68d29cb4442891863a180aaea1c49.jpg
 https://ae-pic-a1.aliexpress-media.com/kf/S0d1f8807648148c2adf77f926b10da2dr.png
 https://ae-pic-a1.aliexpress-media.com/kf/S1420e2e28b354314b9a99f2ed852177dD.jpg
+https://ae-pic-a1.aliexpress-media.com/kf/S15bc3a68cb194cc98459901a0f3b764bp.jpg
 https://ae-pic-a1.aliexpress-media.com/kf/S18ca8e44b5c749bcab9f67d9fb31aff0p.jpg
 https://ae-pic-a1.aliexpress-media.com/kf/S1c953cd12dbc49c4a55a1a46cc9fc7570.jpg
+https://ae-pic-a1.aliexpress-media.com/kf/S203db143ac42474a900123a7cb00b5bfO.jpg
 https://ae-pic-a1.aliexpress-media.com/kf/S2478c30ef9444aa989c8ec2cd958455f3.jpg
 https://ae-pic-a1.aliexpress-media.com/kf/S2af200c86f8c470bb029360cc4db0bf1K.png
 https://ae-pic-a1.aliexpress-media.com/kf/S2c738c2b68ed4a65bfb9b51744751cd4w.jpg
 https://ae-pic-a1.aliexpress-media.com/kf/S2e013ae784eb4b548ddc5ae5f8be1763P.jpg
 https://ae-pic-a1.aliexpress-media.com/kf/S340d3a5721fc4a6baf6965ae4aebf0ccj.jpg
 https://ae-pic-a1.aliexpress-media.com/kf/S35ecf44c44654efea1fcfaf89feb61996.png
+https://ae-pic-a1.aliexpress-media.com/kf/S36320b871fec48efa7c544e3ea8aa53aZ.png
 https://ae-pic-a1.aliexpress-media.com/kf/S3bb82a807f3d4e20b516699ba4400decg.jpg
 https://ae-pic-a1.aliexpress-media.com/kf/S41139fd42d504c01ad4fd29d4aae8b39Q.png
 https://ae-pic-a1.aliexpress-media.com/kf/S44a0f8084a004b448c5a17961efa5195P.jpg
@@ -222,33 +248,43 @@ https://ae-pic-a1.aliexpress-media.com/kf/S48d1c553387f4a36a055b36b8b6c9346e.png
 https://ae-pic-a1.aliexpress-media.com/kf/S49dd2b42193e456996c4ca5ad5679d53F.jpg
 https://ae-pic-a1.aliexpress-media.com/kf/S4aaa20e4bb28465cbb04d06bf577e110V.jpg
 https://ae-pic-a1.aliexpress-media.com/kf/S4ba06708528b4d29a50b257ff3025c42Y.jpg
+https://ae-pic-a1.aliexpress-media.com/kf/S4fa134f028a947b6a5cb449c3e03118cu.jpg
 https://ae-pic-a1.aliexpress-media.com/kf/S537249f1c7cc41f585786a525829a579P.jpg
 https://ae-pic-a1.aliexpress-media.com/kf/S588401bbe3f34f14aa3f2031116f5e97s.jpg
 https://ae-pic-a1.aliexpress-media.com/kf/S5af96c5907e24e6c823edd2fc05aebefo.jpg
 https://ae-pic-a1.aliexpress-media.com/kf/S5cab341f97b548919efe3399b7a0b3a5X.jpg
 https://ae-pic-a1.aliexpress-media.com/kf/S6d06b751ca884331865ab1fdbf0cb556I.jpg
 https://ae-pic-a1.aliexpress-media.com/kf/S6dda4ce7e601480cac68414162642763R.jpg
+https://ae-pic-a1.aliexpress-media.com/kf/S6e342ad8647b46f79cd7dca1e2a24a49j.png
 https://ae-pic-a1.aliexpress-media.com/kf/S6ee6146ce7f34c33b6b8150dc2daf049E.jpg
 https://ae-pic-a1.aliexpress-media.com/kf/S70380c631e734f2f97bb020789d70f2a4.png
+https://ae-pic-a1.aliexpress-media.com/kf/S71478de1cc0042f1b3e41ec3f5d2177dg.jpg
+https://ae-pic-a1.aliexpress-media.com/kf/S719a788f03144a299428b11c1393fad3J.jpg
 https://ae-pic-a1.aliexpress-media.com/kf/S7300653f14bc48a2976b06c5cd2af109s.jpg
 https://ae-pic-a1.aliexpress-media.com/kf/S7ba1f24714ca44889a5892eee18a1d6cx.jpg
+https://ae-pic-a1.aliexpress-media.com/kf/S7cf0ff58caa1456b9065160d64a8b386s.jpg
 https://ae-pic-a1.aliexpress-media.com/kf/S845138ed6598432bbb9f209be0099e25I.jpg
 https://ae-pic-a1.aliexpress-media.com/kf/S8503670107bf42a89589dfff7280f372n.jpg
 https://ae-pic-a1.aliexpress-media.com/kf/S8b3fd8fb6f834634b8e6e2abaed14ce1X.jpg
+https://ae-pic-a1.aliexpress-media.com/kf/S917b6db5670a41e3b15907bd4fb040ccG.jpg
 https://ae-pic-a1.aliexpress-media.com/kf/S9584ae8600b34859aaff89c56326bd70D.png
 https://ae-pic-a1.aliexpress-media.com/kf/S9735cbc7d2a245cc8feb5f282a1bdb31m.jpg
 https://ae-pic-a1.aliexpress-media.com/kf/S9c90ef8b2f164de3b05b170bbb541dbau.png
 https://ae-pic-a1.aliexpress-media.com/kf/Sa00ee498992e4ad49c8600588b1a633eQ.jpg
 https://ae-pic-a1.aliexpress-media.com/kf/Sa31af8785b414c068a92153c8eb13ac5v.jpg
 https://ae-pic-a1.aliexpress-media.com/kf/Sa4e5d9e6671643698a235007ffda998ej.jpg
+https://ae-pic-a1.aliexpress-media.com/kf/Sa81e58ec652b442dadb7ec2fb5f0f9776.jpg
 https://ae-pic-a1.aliexpress-media.com/kf/Sa9521f5815824987ab426e180fb17567t.jpg
 https://ae-pic-a1.aliexpress-media.com/kf/Sac9cf83f2ad848fe86dd0405a23d1e3bC.jpg
+https://ae-pic-a1.aliexpress-media.com/kf/Sb52dd2119378434cb04bb02312706ce8W.jpg
 https://ae-pic-a1.aliexpress-media.com/kf/Sb9304044d3e940508b46f7af36555f32J.jpg
+https://ae-pic-a1.aliexpress-media.com/kf/Sbd2f741c0b694523ba6174cc6aa392c1E.jpg
 https://ae-pic-a1.aliexpress-media.com/kf/Sc4b0a5ad5f9d466c91fe2e8115808262r.jpg
 https://ae-pic-a1.aliexpress-media.com/kf/Sc7f6613de1fe4e96ba61d412d0ffbf34C.jpg
 https://ae-pic-a1.aliexpress-media.com/kf/Scfe5ca7e6541467cb405b5b80ff5f0c9S.jpg
 https://ae-pic-a1.aliexpress-media.com/kf/Sd7a151e385a54e19bc7f2b4d269eeab7Q.jpg
 https://ae-pic-a1.aliexpress-media.com/kf/Sd8916199bfff4cdca5f6444546f768b26.jpg
+https://ae-pic-a1.aliexpress-media.com/kf/Sd9765642dd47447983a126787c74fc06Q.jpg
 https://ae-pic-a1.aliexpress-media.com/kf/Sdacd1469acd74e3291764d621dfc418fh.jpg
 https://ae-pic-a1.aliexpress-media.com/kf/Se3c1e68cd3b340b6b6fd3ae465dc3345N.jpg
 https://ae-pic-a1.aliexpress-media.com/kf/See2352e8ad3f41958a5fb08b0f1a0087H.png
@@ -346,24 +382,31 @@ integratore
 integratore naturale
 integratore vista
 jayo 3
+jikong jk
 kingbank ram
+kingdom hearts
 kingroon arcobaleno
 kit pistola
 lampione giardino
 lige new
+lucidatrice auto
 macchina fiamme
 majohn p136
 manopola gomexus
 microfono condensatore
 mobapad c70
+moondrop chu
 moto mini
 mulinello spinning
 nillkin custodia
 oculare zoom
 orologio parete
 orologio tavolo
+ozer 50
 pannello solare
 penna massaggio
+penna otturazione
+pennarelli cromati
 pinze gola
 podofo pex
 poprace scala
@@ -385,11 +428,13 @@ sensore porte
 sicurezza all
 sistema sicurezza
 smart plug
+smartwatch grado
 songmics scala
 sonoff pow
 staffa montaggio
 starterkit
 supporto silicone
+switch gestito
 syjh coltello
 tagliatubi manuale
 tappeto forma
