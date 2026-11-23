@@ -2,11 +2,14 @@
 # Qui il bot scrive tutti i prodotti gia' postati su Telegram.
 # STORICO PRODOTTI POSTATI - NON CANCELLARE MAI QUESTO FILE!
 # Se lo cancelli, il bot ricomincia a postare gli stessi prodotti!
+00229c70dc4d99a6
 004ec393a6c746c5
 005005637736efba
 01d9d1e7b332286b
+02b2bd3aa6b1163e
 02bd070805a8e156
 030cdca80ae0482a
+0367b7143f50b21d
 0a43db30995bbef0
 0b8793df97302a6a
 0d74a90157c01b17
@@ -28,10 +31,12 @@
 1c1703c062bcd4cf
 1c4063b2c804d7df
 1e803361518ac2f5
+2 bavette
 2023 autunno
 23899e35fd446e53
 24b67c01a6a74d0f
 24v rgb
+25a96e017c27cf52
 260d71d28e2f9269
 2885e520f121afd8
 2919ecc26d44e20c
@@ -55,10 +60,12 @@
 4447bce51d1797a2
 44adb257fa6e3f30
 44be000318ff06e8
+486f8fa515208157
 494f75ba98842d30
 4b2dcede8f6cddc4
 4b437eb01663d5ce
 4e12726e407d8403
+4ef4975ac22b2a8d
 50d6c24862ce36dd
 51a06173eb03d5f6
 5306af5d800242d3
@@ -71,6 +78,7 @@
 5e6a765ef9d7d6bb
 5eff0546da100898
 5fa3dd66d46ac8d7
+61e14b1901ae19df
 6508f3502a5180d8
 6536f0b85aab65b1
 68b8b64e8f372243
@@ -82,6 +90,7 @@
 73d8e6856e3a2307
 744103d14444b7ac
 76a26ca6f901f68c
+784cdd62bb22edc8
 7a15eb1d18c1d6cd
 7a63633df532b326
 7d58605597f89f11
@@ -96,6 +105,7 @@
 8e1ce197a596d42e
 8fa30487f9fc45bd
 8fd460950b0fc7c8
+90707e5b585dbd3c
 90c300fe7a21a41f
 91516363e2a5a626
 9180e0fd0ec3206b
@@ -130,16 +140,20 @@ accappatoio taglia
 adattatore barilotto
 afaad4eb674fa248
 affetta carne
+albero natale
 anello basic
 aneng 683
+angelo 50
 aov pt
 ariete ceramica
 assault concentrato
 autel al319
+b0071a49e1a95a12
 b0127b45c169441a
 b0a1e9f24e00ebd5
 b12b0537a4be186d
 b1ff19bb8ded3e91
+b2ca80e37851d3fa
 b43ff93afa6b15b9
 b4d84b00b9621e38
 b523ec3330a6a548
@@ -147,10 +161,12 @@ b52fb9589390f648
 b7309008f5a82280
 b747b19a74226d80
 ba73fd667b381811
+bba57d17636cd8c0
 bcc7e5db6eb2579f
 betacarotene acceleratore
 bevinsee 12000lm
 bf99bec0070fef22
+bimbi
 bimbo avvocato
 blokees naruto
 booiu adattatore
@@ -190,6 +206,7 @@ cuffie stereo
 cuscino schienale
 custodia mini
 d004f5f11dabd226
+d35fba41822acb35
 d3d05a9c351b0f00
 d4904a8889ae3865
 d79486c15b995548
@@ -208,6 +225,7 @@ decorazione natalizia
 depuratore d
 dernord 2
 diffusore
+dispenser sapone
 dispositivo dimagrante
 distributore cibo
 dito allenamento
@@ -221,6 +239,7 @@ e6bcdc8ecc4954e2
 e7dc3e47c236ada9
 eb1b6939a8f0db6d
 eb3899c1774e4b50
+ec0546fd096c8081
 ec33d34af9ff7c67
 ee9166c95972d7c4
 elefante elly
@@ -234,6 +253,7 @@ f53002dab63a816e
 f5a8a373c7dcb37c
 f6cc47f196027910
 f78579c4aed881bd
+f7d30d96bc1c1c08
 f8a92a7438184874
 f8d9af3ad3cccbe6
 fa7e8ba735bb291d
@@ -243,9 +263,11 @@ felpe sportive
 filamento petg
 filamento stampante
 focolare
+formella bimbo
 formella germano
 frullatore frutta
 gaminja rgb
+gancio portaborsa
 gatto momi
 gerimport base
 giacca revit
@@ -407,32 +429,47 @@ https://www.doctorquality.it/wp-content/uploads/2026/11/df9ce1cc-8a76-48ba-9e54-
 https://www.doctorquality.it/wp-content/uploads/2026/11/s-l1600_-_2023-04-05t115018.052.webp
 https://www.thun.com/media/catalog/product/9/_/9.jpg
 https://www.thun.com/media/catalog/product/C/2/C2214H90-H90-01.jpg
+https://www.thun.com/media/catalog/product/C/2/C2601H90-H90-01.jpg
 https://www.thun.com/media/catalog/product/C/3/C3151H93B-93B-01.jpg
 https://www.thun.com/media/catalog/product/C/3/C3208H87-H87-01.jpg
+https://www.thun.com/media/catalog/product/E/0/E012A82-A82-01.jpg
 https://www.thun.com/media/catalog/product/F/2/F2919H90B-H90B-01.jpg
 https://www.thun.com/media/catalog/product/F/3/F3270H90B-H90B-01.jpg
 https://www.thun.com/media/catalog/product/F/3/F3290H90B-H90B-01.jpg
+https://www.thun.com/media/catalog/product/F/3/F3317A82-A82-01.jpg
 https://www.thun.com/media/catalog/product/F/3/F3370A99-A99-01.jpg
 https://www.thun.com/media/catalog/product/H/1/H1651P55-P55-01.jpg
+https://www.thun.com/media/catalog/product/H/3/H3091P00-P00-01.jpg
+https://www.thun.com/media/catalog/product/K/3/K3659H90-H90-01.jpg
 https://www.thun.com/media/catalog/product/S/2/S2222H90B-H90B-01.jpg
+https://www.thun.com/media/catalog/product/S/3/S3117A82-A82-01.jpg
 https://www.thun.com/media/catalog/product/S/3/S3212A88-A88-01.jpg
 https://www.thun.com/media/catalog/product/T/1/T10035276H90-H90-01.jpg
 https://www.thun.com/media/catalog/product/T/1/T10341209P00-P00-01.jpg
+https://www.thun.com/media/catalog/product/T/1/T10386281A91-A91-01.jpg
+https://www.thun.com/media/catalog/product/T/1/T10789214P00-P00-01_1.jpg
+https://www.thun.com/media/catalog/product/T/1/T10851219H87-H87-01.jpg
 https://www.thun.com/media/catalog/product/T/1/T10904635P00-P00-01.jpg
 https://www.thun.com/media/catalog/product/T/1/T11368309H90-H90-01.jpg
 https://www.thun.com/media/catalog/product/T/1/T11600675P00-P00-01.jpg
+https://www.thun.com/media/catalog/product/T/1/T11844272H90-H90-01.jpg
 https://www.thun.com/media/catalog/product/T/1/T11887682P00-P00-01.jpg
 https://www.thun.com/media/catalog/product/T/1/T11922238P00B-00B-01.jpg
+https://www.thun.com/media/catalog/product/T/1/T12050303A91-A91-01.jpg
 https://www.thun.com/media/catalog/product/T/1/T13066375P00-P00-01.jpg
 https://www.thun.com/media/catalog/product/T/1/T13067027P00-P00-01.jpg
+https://www.thun.com/media/catalog/product/T/1/T13245372P00-P00-01.jpg
 https://www.thun.com/media/catalog/product/V/3/V3136H90-H90-01.jpg
 https://www.thun.com/media/catalog/product/a/d/adozione_img_ist_1080x1080_1__1.png
+https://www.thun.com/media/catalog/product/c/2/c2241h90-h90-01.jpg
 https://www.thun.com/media/catalog/product/c/2/c2965h90-h90-01.jpg
 https://www.thun.com/media/catalog/product/c/3/c3002e02-e02-01.jpg
 https://www.thun.com/media/catalog/product/t/1/t10870208p00-01.jpg
 https://www.thun.com/media/catalog/product/t/1/t11572462p00-01.jpg
 https://www.thun.com/media/catalog/product/t/1/t11658281a83-03_1.jpg
 https://www.thun.com/media/catalog/product/t/1/t11678200p00b-01.jpg
+https://www.thun.com/media/catalog/product/t/1/t12925101p00-01.jpg
+https://www.thun.com/media/catalog/product/t/1/t13238456p00-01_-_copia.jpg
 https://www.thun.com/media/catalog/product/t/1/t13243345p00-01.jpg
 https://www.thun.com/media/catalog/product/t/1/t13313252h90-01.jpg
 htvront rotolo
@@ -458,6 +495,7 @@ kingdom hearts
 kingroon arcobaleno
 kit pistola
 krauterhof balsamo
+lampada fungo
 lampione giardino
 lige new
 luci tenda
@@ -469,6 +507,7 @@ manopola gomexus
 microfono condensatore
 mini calendario
 mini lampada
+mini pettirosso
 miscelatore professionale
 mobapad c70
 mombag 3in1
@@ -478,10 +517,13 @@ motosega
 mulinello spinning
 nillkin custodia
 oculare zoom
+orecchini pendenti
 organizer porta
 orologio appendere
+orologio ceramica
 orologio fitness
 orologio parete
+orologio pendolo
 orologio tavolo
 ozer 50
 pannello solare
@@ -493,6 +535,7 @@ pinze gola
 podofo pex
 poprace scala
 porta trucchi
+portacarte prestige
 portachiavi gatto
 portatovaglioli multiuso
 profumatore auto
@@ -530,10 +573,12 @@ tappeto ginnastico
 tappeto ingresso
 teddy lei
 teddy motors
+teddy vestito
 telecamera solare
 telecamera sorveglianza
 telecomando ir
 telo coprimoto
+tenda re
 tendicatena husqvarna
 termostato radiatore
 tester della
