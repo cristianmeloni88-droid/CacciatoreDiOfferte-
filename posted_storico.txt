@@ -3,6 +3,7 @@
 # STORICO PRODOTTI POSTATI - NON CANCELLARE MAI QUESTO FILE!
 # Se lo cancelli, il bot ricomincia a postare gli stessi prodotti!
 004ec393a6c746c5
+005005637736efba
 01d9d1e7b332286b
 02bd070805a8e156
 030cdca80ae0482a
@@ -14,6 +15,7 @@
 0ef2a413658effcb
 1 18
 1 chiavi
+10bef57fb9cea508
 12 3
 12029a515d3bc22e
 12721590935c83a3
@@ -26,6 +28,7 @@
 1c4063b2c804d7df
 2023 autunno
 23899e35fd446e53
+24b67c01a6a74d0f
 24v rgb
 260d71d28e2f9269
 2885e520f121afd8
@@ -41,6 +44,7 @@
 34e962ae50b0b498
 387a2993e573ea1b
 39083a3973b82e6f
+3c3f896ced3418f1
 3edfb8b74064a670
 41e748f5c70d1961
 4447bce51d1797a2
@@ -63,6 +67,7 @@
 6508f3502a5180d8
 6536f0b85aab65b1
 68b8b64e8f372243
+6ac1a350fc71239d
 702e2a4e5c924635
 71ab2767e181840a
 7239e1382ebd0ce7
@@ -70,11 +75,13 @@
 744103d14444b7ac
 76a26ca6f901f68c
 7a15eb1d18c1d6cd
+7a63633df532b326
 7d58605597f89f11
 7db2406d0537cf40
 8005b39114e7fd99
 835be9d7736be155
 89fd194daf5ad30c
+8cb2dacc2d1d28f1
 8d5095387b495e5c
 8ddef5d450a0fbd9
 8e1ce197a596d42e
@@ -83,6 +90,7 @@
 90c300fe7a21a41f
 91516363e2a5a626
 9180e0fd0ec3206b
+9346b8ec6cb9525f
 934a57120d0e4d81
 93f98c9482930d71
 96ce8347493f054a
@@ -102,6 +110,7 @@ a299bc86aa906b1c
 a3faf37360216d23
 a4f1e055454d5a1b
 a57aa2189ff95f81
+a752e40958423491
 a8a8c2bd0238cb29
 a942613cd70eb113
 aaa66de0f56918ee
@@ -123,6 +132,7 @@ b12b0537a4be186d
 b1ff19bb8ded3e91
 b43ff93afa6b15b9
 b4d84b00b9621e38
+b523ec3330a6a548
 b52fb9589390f648
 b7309008f5a82280
 b747b19a74226d80
@@ -151,8 +161,10 @@ carrello campeggio
 casa kit
 casco protettivo
 case fanxiang
+cc5d3a5cdbd593ee
 cell pt
 cfd61cb9b57f3ce9
+cfecf0a67b27dd31
 ciclette casa
 cinturino originale
 collagene marino
@@ -176,25 +188,31 @@ decorazione natalizia
 depuratore d
 dernord 2
 diffusore
+dispositivo dimagrante
 distributore cibo
+dito allenamento
 drenapur capsule
 drenapur liquido
 e05d345e9c7d10ed
 e45d5b82b6c20ca8
 e4f6f2c5f273a4fb
 e5b735f782ab1804
+e6bcdc8ecc4954e2
 e7dc3e47c236ada9
 eb1b6939a8f0db6d
 eb3899c1774e4b50
 ec33d34af9ff7c67
 ee9166c95972d7c4
 elefante elly
+elettrostimolatore 5
 f314aab8cdbcd730
 f420c57c28e417f3
 f472a554c13c6466
+f52e0a3c43520f27
 f53002dab63a816e
 f5a8a373c7dcb37c
 f6cc47f196027910
+f78579c4aed881bd
 f8a92a7438184874
 f8d9af3ad3cccbe6
 fa7e8ba735bb291d
@@ -335,21 +353,36 @@ https://cdn.shopify.com/s/files/1/0727/5711/7240/files/wall-mounting-bracket-for
 https://cdn.shopify.com/s/files/1/0727/5711/7240/products/cue-2c-2mp-236812.jpg
 https://cdn.shopify.com/s/files/1/0727/5711/7240/products/imou-protect-service-license-key-159632.jpg
 https://cdn.shopify.com/s/files/1/0727/5711/7240/products/rex-3d-auto-cruise-5mp3mp-934498.jpg
+https://www.doctorquality.it/wp-content/uploads/2024/05/0-1fab4b12-600-Kr-uterhof-Pferdebalsam-500-ml-Balsamo-Cavallo-con-olio-di-Arnica-menta-Rinfrescante.jpg
+https://www.doctorquality.it/wp-content/uploads/2025/08/123165.jpg
+https://www.doctorquality.it/wp-content/uploads/2025/08/elettrostimolatore_5_in_1_1.jpg
 https://www.doctorquality.it/wp-content/uploads/2025/08/f_bdf.png
+https://www.doctorquality.it/wp-content/uploads/2025/08/fb1sf1b6s1fb.jpg
 https://www.doctorquality.it/wp-content/uploads/2025/08/microfono_modelli.jpg
 https://www.doctorquality.it/wp-content/uploads/2025/09/ddddddd.png
 https://www.doctorquality.it/wp-content/uploads/2025/09/maschera-casco-per-saldatura-cristalli-liquidi-.jpg
+https://www.doctorquality.it/wp-content/uploads/2025/09/spiderman_1_1_4.jpg
 https://www.doctorquality.it/wp-content/uploads/2025/09/w8_1.jpg
 https://www.doctorquality.it/wp-content/uploads/2025/10/38f7aa1f907e8c8d362564c1849fff60_cbfb73a0-0c21-4c26-8650-79b3b2838ecc_540x.jpg
+https://www.doctorquality.it/wp-content/uploads/2025/12/g_2.png
+https://www.doctorquality.it/wp-content/uploads/2026/01/51pbehaha6s._ac_sl1500_.jpg
 https://www.doctorquality.it/wp-content/uploads/2026/03/1_1_1.jpeg
+https://www.doctorquality.it/wp-content/uploads/2026/03/815wjftdi3l._ac_sl1500_.jpg
 https://www.doctorquality.it/wp-content/uploads/2026/03/db14c683-7043-4d50-a612-84ba41b79b36.png
+https://www.doctorquality.it/wp-content/uploads/2026/03/h60c0e364ff8a450ba7d14adb13d94adah_1.jpg
 https://www.doctorquality.it/wp-content/uploads/2026/03/hgjhg.png
 https://www.doctorquality.it/wp-content/uploads/2026/05/dgbsgbsdfgb_1.png
 https://www.doctorquality.it/wp-content/uploads/2026/05/gbdgbdgnfh.jpg
+https://www.doctorquality.it/wp-content/uploads/2026/05/s-l1600_21_1.jpg
+https://www.doctorquality.it/wp-content/uploads/2026/10/16302d3c-3891-4d0d-b61b-3d32a5013866_2_11zon.webp
 https://www.doctorquality.it/wp-content/uploads/2026/10/5e6682e1-784e-43ce-bac1-764d0f495863.webp
 https://www.doctorquality.it/wp-content/uploads/2026/10/7c45e239-1bcb-4780-9434-7cb4831d058d_2_11zon.webp
+https://www.doctorquality.it/wp-content/uploads/2026/10/97eb219e-fc2d-4ddf-8b0b-24ca090b83b4.webp
+https://www.doctorquality.it/wp-content/uploads/2026/10/98cf6769-f656-483e-938c-392622a876d4_6_11zon.webp
+https://www.doctorquality.it/wp-content/uploads/2026/11/a6d1va6d1va6d.webp
 https://www.doctorquality.it/wp-content/uploads/2026/11/cfca0e95-f17f-4813-9058-445a219828e3_11zon.webp
 https://www.doctorquality.it/wp-content/uploads/2026/11/df9ce1cc-8a76-48ba-9e54-7f23a79a373d_11zon.webp
+https://www.doctorquality.it/wp-content/uploads/2026/11/s-l1600_-_2023-04-05t115018.052.webp
 https://www.thun.com/media/catalog/product/9/_/9.jpg
 https://www.thun.com/media/catalog/product/C/2/C2214H90-H90-01.jpg
 https://www.thun.com/media/catalog/product/F/2/F2919H90B-H90B-01.jpg
@@ -387,23 +420,31 @@ kingbank ram
 kingdom hearts
 kingroon arcobaleno
 kit pistola
+krauterhof balsamo
 lampione giardino
 lige new
+luci tenda
 lucidatrice auto
 macchina fiamme
 majohn p136
 manopola gomexus
 microfono condensatore
+miscelatore professionale
 mobapad c70
+mombag 3in1
 moondrop chu
 moto mini
+motosega
 mulinello spinning
 nillkin custodia
 oculare zoom
+organizer porta
+orologio fitness
 orologio parete
 orologio tavolo
 ozer 50
 pannello solare
+pappa spiderman
 penna massaggio
 penna otturazione
 pennarelli cromati
@@ -411,6 +452,7 @@ pinze gola
 podofo pex
 poprace scala
 porta trucchi
+portatovaglioli multiuso
 profumatore auto
 profumatore giardino
 profumo bucato
@@ -431,12 +473,14 @@ smart plug
 smartwatch grado
 songmics scala
 sonoff pow
+spazzola multifunzione
 staffa montaggio
 starterkit
 supporto silicone
 switch gestito
 syjh coltello
 tagliatubi manuale
+tappetino lettiera
 tappeto forma
 tappeto ginnastico
 tappeto ingresso
@@ -444,6 +488,7 @@ teddy lei
 telecamera solare
 telecamera sorveglianza
 telecomando ir
+telo coprimoto
 tendicatena husqvarna
 termostato radiatore
 tester della
