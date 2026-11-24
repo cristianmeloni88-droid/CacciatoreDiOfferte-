@@ -27,15 +27,18 @@
 1 chiavi
 10bef57fb9cea508
 12 3
+120 pz
 12029a515d3bc22e
 12721590935c83a3
 14l bs
+160d6cf99c40c2d3
 162571daec1193be
 165f7c64e803492d
 1750ddcd85482ef4
 17659fa5e86cc24d
 18939308a1c27e71
 18a2c6c57a504bed
+19c18566eac151d2
 1a5bb6e601631f6d
 1ac2f430f6aa6af9
 1c07d0a5005acc8e
@@ -60,6 +63,7 @@
 2a2fd61fac50d101
 2d48ca6c9e4cdbd2
 2e563078b0d9b658
+2e93bed36ffa3e0d
 2f45a58186025ed8
 3018e1ca511d4e1a
 30836e518e463e3a
@@ -116,20 +120,24 @@
 5eff0546da100898
 5fa3dd66d46ac8d7
 61e14b1901ae19df
+62d6ddf1e7aec71f
 6508f3502a5180d8
 6536f0b85aab65b1
 68b8b64e8f372243
 69b113ae46407332
 6ac1a350fc71239d
 6b09b5fd33fd3f54
+6c131b3cdb2b2e50
 6cf0e18b75245e44
 6e6d74223e289bfb
 702e2a4e5c924635
+718f0033faa6e481
 71ab2767e181840a
 7239e1382ebd0ce7
 73d8e6856e3a2307
 73dfbd70845b65bb
 744103d14444b7ac
+7606085a467ca7e3
 76a0266ec4c48fa4
 76a26ca6f901f68c
 784cdd62bb22edc8
@@ -147,10 +155,12 @@
 8cb2dacc2d1d28f1
 8cc42fcdb225b684
 8d5095387b495e5c
+8d54b55b571cca27
 8ddef5d450a0fbd9
 8e1ce197a596d42e
 8fa30487f9fc45bd
 8fd460950b0fc7c8
+906db0f177fe80e3
 90707e5b585dbd3c
 90c300fe7a21a41f
 91516363e2a5a626
@@ -159,8 +169,10 @@
 934a57120d0e4d81
 93f98c9482930d71
 954592bfaa929f6e
+96b84116453b27f3
 96ce8347493f054a
 96f494684bb6b1f4
+97cebe6158f1a8e9
 986f5572358072e8
 98d485866cc27254
 996768546f81a48d
@@ -180,6 +192,7 @@ a3faf37360216d23
 a4f1e055454d5a1b
 a57aa2189ff95f81
 a752e40958423491
+a79e8fd3312327bd
 a8a8c2bd0238cb29
 a942613cd70eb113
 aaa66de0f56918ee
@@ -188,6 +201,7 @@ abff04528b3e8596
 accappatoio taglia
 ad1b89bfd2797173
 adattatore barilotto
+adattatore wifi
 afaad4eb674fa248
 affetta carne
 albero natale
@@ -236,6 +250,7 @@ bracci controllo
 bromelina 5000
 bseed 1
 bulb cam
+bussola militare
 c205714e0bb15530
 c22aeff799851ae1
 c2893ae26f76aa1b
@@ -280,6 +295,7 @@ d004f5f11dabd226
 d0fdd7c6d788f337
 d35fba41822acb35
 d3d05a9c351b0f00
+d3e8d0fa65a05320
 d4904a8889ae3865
 d79486c15b995548
 d7c58cb71ac07e7a
@@ -343,8 +359,10 @@ f66f1419ffa68018
 f6cc47f196027910
 f78579c4aed881bd
 f7d30d96bc1c1c08
+f81a8409406c3efd
 f8a92a7438184874
 f8d9af3ad3cccbe6
+f9a44fd5232fd959
 fa7e8ba735bb291d
 fb2aae4037103db9
 fddf7b28682ad078
@@ -567,26 +585,41 @@ https://www.doctorquality.it/wp-content/uploads/2025/08/elettrostimolatore_5_in_
 https://www.doctorquality.it/wp-content/uploads/2025/08/f_bdf.png
 https://www.doctorquality.it/wp-content/uploads/2025/08/fb1sf1b6s1fb.jpg
 https://www.doctorquality.it/wp-content/uploads/2025/08/microfono_modelli.jpg
+https://www.doctorquality.it/wp-content/uploads/2025/09/61u8k8dsb3l._ac_sx679_.jpg
+https://www.doctorquality.it/wp-content/uploads/2025/09/81ic5delfil._ac_sl1500_.jpg
+https://www.doctorquality.it/wp-content/uploads/2025/09/bussolamilitare.jpg
 https://www.doctorquality.it/wp-content/uploads/2025/09/ddddddd.png
 https://www.doctorquality.it/wp-content/uploads/2025/09/maschera-casco-per-saldatura-cristalli-liquidi-.jpg
 https://www.doctorquality.it/wp-content/uploads/2025/09/spiderman_1_1_4.jpg
+https://www.doctorquality.it/wp-content/uploads/2025/09/umidificatore_9_1.jpg
 https://www.doctorquality.it/wp-content/uploads/2025/09/w8_1.jpg
 https://www.doctorquality.it/wp-content/uploads/2025/10/38f7aa1f907e8c8d362564c1849fff60_cbfb73a0-0c21-4c26-8650-79b3b2838ecc_540x.jpg
+https://www.doctorquality.it/wp-content/uploads/2025/10/fsfddd_1.png
+https://www.doctorquality.it/wp-content/uploads/2025/10/gw-360_1.jpg
 https://www.doctorquality.it/wp-content/uploads/2025/12/g_2.png
 https://www.doctorquality.it/wp-content/uploads/2026/01/51pbehaha6s._ac_sl1500_.jpg
 https://www.doctorquality.it/wp-content/uploads/2026/03/1_1_1.jpeg
 https://www.doctorquality.it/wp-content/uploads/2026/03/815wjftdi3l._ac_sl1500_.jpg
 https://www.doctorquality.it/wp-content/uploads/2026/03/db14c683-7043-4d50-a612-84ba41b79b36.png
+https://www.doctorquality.it/wp-content/uploads/2026/03/fhfhgfh_1.jpg
 https://www.doctorquality.it/wp-content/uploads/2026/03/h60c0e364ff8a450ba7d14adb13d94adah_1.jpg
 https://www.doctorquality.it/wp-content/uploads/2026/03/hgjhg.png
+https://www.doctorquality.it/wp-content/uploads/2026/03/jfjsd_1.jpg
+https://www.doctorquality.it/wp-content/uploads/2026/03/kfhskjhgs_1.jpg
+https://www.doctorquality.it/wp-content/uploads/2026/03/sdvsfvfbdgbfdg.jpg
 https://www.doctorquality.it/wp-content/uploads/2026/05/dgbsgbsdfgb_1.png
 https://www.doctorquality.it/wp-content/uploads/2026/05/gbdgbdgnfh.jpg
 https://www.doctorquality.it/wp-content/uploads/2026/05/s-l1600_21_1.jpg
+https://www.doctorquality.it/wp-content/uploads/2026/05/s-l1600_21__4_2.jpg
+https://www.doctorquality.it/wp-content/uploads/2026/05/s-l1600_5__18_1.jpg
+https://www.doctorquality.it/wp-content/uploads/2026/09/43ec95b2-2a05-4679-95b6-96c173fa188b.jpg
 https://www.doctorquality.it/wp-content/uploads/2026/10/16302d3c-3891-4d0d-b61b-3d32a5013866_2_11zon.webp
 https://www.doctorquality.it/wp-content/uploads/2026/10/5e6682e1-784e-43ce-bac1-764d0f495863.webp
 https://www.doctorquality.it/wp-content/uploads/2026/10/7c45e239-1bcb-4780-9434-7cb4831d058d_2_11zon.webp
 https://www.doctorquality.it/wp-content/uploads/2026/10/97eb219e-fc2d-4ddf-8b0b-24ca090b83b4.webp
 https://www.doctorquality.it/wp-content/uploads/2026/10/98cf6769-f656-483e-938c-392622a876d4_6_11zon.webp
+https://www.doctorquality.it/wp-content/uploads/2026/10/download_30_.webp
+https://www.doctorquality.it/wp-content/uploads/2026/10/e7fdd137-eb9d-4a97-a4e0-bb750eba1587.webp
 https://www.doctorquality.it/wp-content/uploads/2026/11/a6d1va6d1va6d.webp
 https://www.doctorquality.it/wp-content/uploads/2026/11/cfca0e95-f17f-4813-9058-445a219828e3_11zon.webp
 https://www.doctorquality.it/wp-content/uploads/2026/11/df9ce1cc-8a76-48ba-9e54-7f23a79a373d_11zon.webp
@@ -637,6 +670,7 @@ https://www.thun.com/media/catalog/product/t/1/t13238456p00-01_-_copia.jpg
 https://www.thun.com/media/catalog/product/t/1/t13243345p00-01.jpg
 https://www.thun.com/media/catalog/product/t/1/t13313252h90-01.jpg
 htvront rotolo
+hw28 smart
 imou 2
 imou 2pcs
 imou 360
@@ -685,6 +719,7 @@ microfono condensatore
 mini calendario
 mini lampada
 mini pettirosso
+mini turbo
 miscelatore professionale
 mobapad c70
 modellini auto
@@ -705,8 +740,10 @@ orologio fitness
 orologio parete
 orologio pendolo
 orologio tavolo
+orso fiori
 ozer 50
 palloncini tema
+panino hamburger
 pannello solare
 pannello strumenti
 pantaloni sportivi
@@ -716,7 +753,10 @@ pedali nylon
 penna massaggio
 penna otturazione
 pennarelli cromati
+pet portatile
+pezzolina anti
 pgytech linkgo
+piastra arricciacapelli
 pinze gola
 podofo pex
 poprace scala
@@ -747,7 +787,9 @@ sicurezza all
 sistema sicurezza
 sistema telecamere
 smart plug
+smartwatch 4g
 smartwatch grado
+soffiatore vento
 sofirn sd06
 songmics cassettiera
 songmics scala
@@ -766,6 +808,7 @@ switch gestito
 syjh coltello
 tagliatubi manuale
 taglierina torte
+tappetino cibo
 tappetino lettiera
 tappeto forma
 tappeto ginnastico
@@ -788,9 +831,11 @@ titan pro
 titanic building
 toocki 105w
 tsurinoya mulinello
+turbo tail
 turbocompressore td025
 tws akz
 ulanzi ua12
+umidificatore aromi
 vevor comando
 ws 10ml
 x adv750
