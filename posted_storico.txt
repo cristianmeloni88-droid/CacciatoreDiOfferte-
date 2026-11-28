@@ -18,6 +18,7 @@
 038a5ad883ca1c8e
 03a0aa6226c2bcce
 03dff966cbba4144
+03e4d8b383877ecf
 04708f035c70d7f9
 04cc5161c159804d
 04d38fbc11f82fad
@@ -50,6 +51,7 @@
 0d74a90157c01b17
 0d75b0a9bb14a6ac
 0e143e7a44a01132
+0e487fa9e68bb62b
 0e97dfd754b5ea4f
 0ef2a413658effcb
 1 16
@@ -77,6 +79,7 @@
 12ab34c898745024
 12ffddc9c6d4acb5
 130b22161e33fbb9
+13782df1687ea862
 13adadd05d9b8fdc
 13dcff248e60f2e1
 14 chiavi
@@ -263,6 +266,7 @@
 4751323b96206a4e
 486a64b82ff2feac
 486f8fa515208157
+488c6e13a66a50ef
 494f292368420e2a
 494f75ba98842d30
 4a99ff40e63ec1fa
@@ -314,8 +318,10 @@
 57e5c3ef932b4d0d
 57edf2884641a5c9
 5864fea1afe85f6c
+586ef9117aa229e1
 58ac928e6203b971
 59c24d07a3a8ea14
+5acdd72e74f291d0
 5b0669b5bf2daad3
 5c429676b7fd09f5
 5c4d2a771a866049
@@ -389,6 +395,7 @@
 71e3eccc5a8c7e9c
 7239e1382ebd0ce7
 72844ea984c5b95b
+72bccf727fc6de3a
 73d8e6856e3a2307
 73dfbd70845b65bb
 73ff89d87aeb9330
@@ -398,6 +405,7 @@
 75f850b5145cf2dd
 7606085a467ca7e3
 765b2e04de87a95e
+769acdd76c86789c
 76a0266ec4c48fa4
 76a26ca6f901f68c
 7710b3b26314c3da
@@ -471,6 +479,7 @@
 89fb822c0e32c9c4
 89fd194daf5ad30c
 8a3d75c13a58d4a1
+8b363707cee14e04
 8b3f218fbb5895da
 8b42666bca310d46
 8b85a5da9fe788ba
@@ -507,10 +516,12 @@
 93f00633bc8acf78
 93f98c9482930d71
 940ac2015521516c
+94143c5bc0f7772e
 9433767cee527296
 94b314df5c79bc16
 94b709c6e05be170
 954592bfaa929f6e
+9571c8efeeda6c84
 958d6b7a3ed784a8
 9622db4061575bb6
 9653a34cfd76fde8
@@ -619,6 +630,7 @@ ajazz akp03e
 akluer rl
 albero natale
 alimentatore muro
+alimentatore stabilizzato
 allarmi acustici
 altoparlante amplificatore
 alzata porcellana
@@ -663,6 +675,7 @@ b0c723aa42c526eb
 b12b0537a4be186d
 b19fa4272262a607
 b1b34cef4e6f825f
+b1b9a545aab090a4
 b1edf49db2f5e0f2
 b1ff19bb8ded3e91
 b2569873e9ea9aed
@@ -677,6 +690,7 @@ b4fbfe9d746df07c
 b523ec3330a6a548
 b52fb9589390f648
 b575202f661f7b69
+b65bd9dd68577062
 b6a551c63c1f5d91
 b6c486fe39a0cac1
 b7309008f5a82280
@@ -687,6 +701,7 @@ b79cbfcfcc148030
 b7fbad53bd0a54ec
 b80435c6829928db
 b8c10bcfb51f5f54
+b8d7512b1acb6e49
 b8fa90b6a8080575
 b93f3238bae151d8
 b95ed4ff29f07e39
@@ -790,6 +805,7 @@ cab87a4380144a04
 cabletime scheda
 cachepot giallo
 cachepot i
+calcetto balilla
 calendario perpetuo
 calendario tavolo
 calzini sportivi
@@ -869,6 +885,7 @@ comfast 300
 comfast cf
 comica adcaster
 completo cavi
+compressore universale
 confezione 10
 confezione 7
 coniglio roger
@@ -878,6 +895,7 @@ continental 700c
 contrangolo dentale
 controller dimmer
 controller led
+controller xbox
 coperchio wc
 coperta poncho
 copertura solare
@@ -1001,6 +1019,7 @@ eb3899c1774e4b50
 ebc31f06a1606613
 ec0546fd096c8081
 ec33d34af9ff7c67
+ed0ccaea8fa9b33f
 ed4a1363fe25b32d
 ed6915a2228bd7f9
 ee9166c95972d7c4
@@ -1686,13 +1705,16 @@ https://cdn.shopify.com/s/files/1/0727/5711/7240/products/imou-protect-service-l
 https://cdn.shopify.com/s/files/1/0727/5711/7240/products/ranger-2c-3mp4mp5mp-548990.jpg
 https://cdn.shopify.com/s/files/1/0727/5711/7240/products/rex-3d-auto-cruise-5mp3mp-934498.jpg
 https://www.doctorquality.it/wp-content/uploads/2024/05/0-1fab4b12-600-Kr-uterhof-Pferdebalsam-500-ml-Balsamo-Cavallo-con-olio-di-Arnica-menta-Rinfrescante.jpg
+https://www.doctorquality.it/wp-content/uploads/2025/04/nike_ck_ascorbato_potassio_200_bustine.webp
 https://www.doctorquality.it/wp-content/uploads/2025/04/s-l1600-1.webp
 https://www.doctorquality.it/wp-content/uploads/2025/05/grafiche-magento-pdv-bauzaar_-_2024-04-22t165541.823.png
 https://www.doctorquality.it/wp-content/uploads/2025/07/1437_54933_johnson-baby-olio-aloe-vera-300ml_12345_151103114605.jpg
 https://www.doctorquality.it/wp-content/uploads/2025/08/123165.jpg
+https://www.doctorquality.it/wp-content/uploads/2025/08/51_71gmr_hl._ac_sl1000_.jpg
 https://www.doctorquality.it/wp-content/uploads/2025/08/51fbwtzduwl._sl1001_.jpg
 https://www.doctorquality.it/wp-content/uploads/2025/08/5d8efe55b5447a3cb40a4fc1-5-large.jpg
 https://www.doctorquality.it/wp-content/uploads/2025/08/61mgib8epql._ac_sl1500_.jpg
+https://www.doctorquality.it/wp-content/uploads/2025/08/71xhaasni2l._ac_sl1500_.jpg
 https://www.doctorquality.it/wp-content/uploads/2025/08/elettrostimolatore_5_in_1_1.jpg
 https://www.doctorquality.it/wp-content/uploads/2025/08/f_bdf.png
 https://www.doctorquality.it/wp-content/uploads/2025/08/fb1sf1b6s1fb.jpg
@@ -1702,6 +1724,7 @@ https://www.doctorquality.it/wp-content/uploads/2025/08/htb1txsbai_vk1rjy0foq6xi
 https://www.doctorquality.it/wp-content/uploads/2025/08/kit-toelettatura-pulizia-lavaggio-cani-e-gatti-doccia-guanto-peli-e-asciugamano.jpg
 https://www.doctorquality.it/wp-content/uploads/2025/08/microfono_modelli.jpg
 https://www.doctorquality.it/wp-content/uploads/2025/08/ventilatore-a-piantana-5-pale-in-acciaio-regolabile-oscillante-3-velocita-fs40-2_2_.jpg
+https://www.doctorquality.it/wp-content/uploads/2025/09/000000000032.jpg
 https://www.doctorquality.it/wp-content/uploads/2025/09/51usr81kxhl._ac_.jpg
 https://www.doctorquality.it/wp-content/uploads/2025/09/61sgc33rqel._ac_sl1500__1_.jpg
 https://www.doctorquality.it/wp-content/uploads/2025/09/61u8k8dsb3l._ac_sx679_.jpg
@@ -1729,6 +1752,7 @@ https://www.doctorquality.it/wp-content/uploads/2025/12/51b7ne5mmal._ac_sl1200__
 https://www.doctorquality.it/wp-content/uploads/2025/12/ab9eac99-2d7a-459f-afbb-a14c344cb370.webp
 https://www.doctorquality.it/wp-content/uploads/2025/12/g_2.png
 https://www.doctorquality.it/wp-content/uploads/2025/12/hdhhdshds.jpg
+https://www.doctorquality.it/wp-content/uploads/2026/01/20161107172049-4kg.jpg
 https://www.doctorquality.it/wp-content/uploads/2026/01/51pbehaha6s._ac_sl1500_.jpg
 https://www.doctorquality.it/wp-content/uploads/2026/01/s-l1600_1__88.jpg
 https://www.doctorquality.it/wp-content/uploads/2026/03/10020045_0_1_a2eb4fa33c100eb4e0f800ed6d0b6c09.jpg
@@ -1747,6 +1771,7 @@ https://www.doctorquality.it/wp-content/uploads/2026/03/ewfew.png
 https://www.doctorquality.it/wp-content/uploads/2026/03/ff.jpg
 https://www.doctorquality.it/wp-content/uploads/2026/03/fhfhgfh_1.jpg
 https://www.doctorquality.it/wp-content/uploads/2026/03/ghfdhgdgh.jpg
+https://www.doctorquality.it/wp-content/uploads/2026/03/gsdfgds.jpeg
 https://www.doctorquality.it/wp-content/uploads/2026/03/h60c0e364ff8a450ba7d14adb13d94adah_1.jpg
 https://www.doctorquality.it/wp-content/uploads/2026/03/hgjhg.png
 https://www.doctorquality.it/wp-content/uploads/2026/03/jfjsd_1.jpg
@@ -1758,13 +1783,17 @@ https://www.doctorquality.it/wp-content/uploads/2026/03/s-l1600_1__86_2.jpg
 https://www.doctorquality.it/wp-content/uploads/2026/03/screenshot_2026-03-12_103543.png
 https://www.doctorquality.it/wp-content/uploads/2026/03/sdvsfvfbdgbfdg.jpg
 https://www.doctorquality.it/wp-content/uploads/2026/03/yutuytuy_1.jpg
+https://www.doctorquality.it/wp-content/uploads/2026/05/12v_15a_1_.jpg
 https://www.doctorquality.it/wp-content/uploads/2026/05/16e32734-d383-4b16-968b-033172cb7c06_2_11zon-2.webp
 https://www.doctorquality.it/wp-content/uploads/2026/05/41x8ksf_l9l._ac_.jpg
 https://www.doctorquality.it/wp-content/uploads/2026/05/61ypf63guhl._ac_sl1500_.jpg
 https://www.doctorquality.it/wp-content/uploads/2026/05/6511a1cb-896f-4c97-82d5-59c6ad741a96-1.png
+https://www.doctorquality.it/wp-content/uploads/2026/05/a6dv1a65d1v6a1dv_1.jpg
+https://www.doctorquality.it/wp-content/uploads/2026/05/adfad.jpg
 https://www.doctorquality.it/wp-content/uploads/2026/05/alzatacco_1.jpg
 https://www.doctorquality.it/wp-content/uploads/2026/05/carica2usb.jpg
 https://www.doctorquality.it/wp-content/uploads/2026/05/dgbsgbsdfgb_1.png
+https://www.doctorquality.it/wp-content/uploads/2026/05/dsfds.jpg
 https://www.doctorquality.it/wp-content/uploads/2026/05/fgfgfgffg.png
 https://www.doctorquality.it/wp-content/uploads/2026/05/fresa_unghie.jpg
 https://www.doctorquality.it/wp-content/uploads/2026/05/gbdgbdgnfh.jpg
@@ -1779,8 +1808,10 @@ https://www.doctorquality.it/wp-content/uploads/2026/05/s-l1600_6_1.png
 https://www.doctorquality.it/wp-content/uploads/2026/05/sfasfas_1.png
 https://www.doctorquality.it/wp-content/uploads/2026/06/61lyasyiqol._ac_sl1500_.jpg
 https://www.doctorquality.it/wp-content/uploads/2026/09/071dcecd-57f8-4325-b9d7-071dd8dae275_11zon.webp
+https://www.doctorquality.it/wp-content/uploads/2026/09/0a0af91f-3c2c-4552-8d38-4cd26e902d4d_4_11zon.webp
 https://www.doctorquality.it/wp-content/uploads/2026/09/43ec95b2-2a05-4679-95b6-96c173fa188b.jpg
 https://www.doctorquality.it/wp-content/uploads/2026/09/61cfqylmz6l._ac_sl1300_.jpg
+https://www.doctorquality.it/wp-content/uploads/2026/10/033a6603-6c58-4479-b688-a4981caa2bea_11zon.webp
 https://www.doctorquality.it/wp-content/uploads/2026/10/16302d3c-3891-4d0d-b61b-3d32a5013866_2_11zon.webp
 https://www.doctorquality.it/wp-content/uploads/2026/10/5e6682e1-784e-43ce-bac1-764d0f495863.webp
 https://www.doctorquality.it/wp-content/uploads/2026/10/6eae48d0-74a1-40c0-b700-c604f53edebf.webp
@@ -1789,6 +1820,7 @@ https://www.doctorquality.it/wp-content/uploads/2026/10/842c0847-d68a-4104-87d5-
 https://www.doctorquality.it/wp-content/uploads/2026/10/97eb219e-fc2d-4ddf-8b0b-24ca090b83b4.webp
 https://www.doctorquality.it/wp-content/uploads/2026/10/98cf6769-f656-483e-938c-392622a876d4_6_11zon.webp
 https://www.doctorquality.it/wp-content/uploads/2026/10/9c6ca5db-f646-4768-880b-f65ccfaf3240.webp
+https://www.doctorquality.it/wp-content/uploads/2026/10/corpo-in-lega-di-titanio-2-08-schermo_1__1_1_1_11zon_1.webp
 https://www.doctorquality.it/wp-content/uploads/2026/10/download_30_.webp
 https://www.doctorquality.it/wp-content/uploads/2026/10/e7fdd137-eb9d-4a97-a4e0-bb750eba1587.webp
 https://www.doctorquality.it/wp-content/uploads/2026/10/image_7_11zon.webp
@@ -1796,6 +1828,7 @@ https://www.doctorquality.it/wp-content/uploads/2026/11/41nlyparvkl._sl500_._ac_
 https://www.doctorquality.it/wp-content/uploads/2026/11/6192imsrjrl._ac_sl1500__1.webp
 https://www.doctorquality.it/wp-content/uploads/2026/11/71fmmi1ajdl._ac_sl1500_.webp
 https://www.doctorquality.it/wp-content/uploads/2026/11/71fqc51nj9l._ac_sl1500_.webp
+https://www.doctorquality.it/wp-content/uploads/2026/11/71nogpflikl._ac_sl1500_.webp
 https://www.doctorquality.it/wp-content/uploads/2026/11/a650840e-466b-48f7-94f0-04d58ade37fc.webp
 https://www.doctorquality.it/wp-content/uploads/2026/11/a6d1va6d1va6d.webp
 https://www.doctorquality.it/wp-content/uploads/2026/11/b2c23d4a18934ebcb0969684af16a56f_tplv-t5fjg24jzw-resize-webp_800_800.webp
@@ -1803,6 +1836,7 @@ https://www.doctorquality.it/wp-content/uploads/2026/11/borsa-portacellulare-sup
 https://www.doctorquality.it/wp-content/uploads/2026/11/cfca0e95-f17f-4813-9058-445a219828e3_11zon.webp
 https://www.doctorquality.it/wp-content/uploads/2026/11/cfe8b77e-b179-4e17-afba-a06806a6e5a0_11zon.webp
 https://www.doctorquality.it/wp-content/uploads/2026/11/df9ce1cc-8a76-48ba-9e54-7f23a79a373d_11zon.webp
+https://www.doctorquality.it/wp-content/uploads/2026/11/grfgfgfg.webp
 https://www.doctorquality.it/wp-content/uploads/2026/11/s-l1600_-_2023-04-05t115018.052.webp
 https://www.doctorquality.it/wp-content/uploads/2026/11/schermata_2024-10-17_alle_09.59.41.webp
 https://www.thun.com/media/catalog/product/9/_/9.jpg
@@ -2017,6 +2051,7 @@ lampioncino giardino
 lampione giardino
 lancio 2026
 lattafa yara
+leggings sportivi
 leggio spartiti
 lemorele tc100
 lettera w
@@ -2045,6 +2080,7 @@ magnete margherita
 magnete thun
 magnete tulipano
 majohn p136
+mano finta
 manopola gomexus
 marvo scorpion
 maschi filiere
@@ -2069,6 +2105,7 @@ mini cane
 mini gatto
 mini lampada
 mini pettirosso
+mini telefono
 mini turbo
 minions portafoto
 mirino tattico
@@ -2095,6 +2132,7 @@ mulinello spinning
 netac m
 nextool mini
 nf 820
+nike ck
 nillkin custodia
 nmminer nerdminer
 noyafa metal
@@ -2130,6 +2168,7 @@ orologio parete
 orologio pendolo
 orologio sportivo
 orologio tavolo
+orologio watch8
 orso fiori
 oste
 oukitel c1
@@ -2148,6 +2187,7 @@ parte adattatore
 pasabahce patisserie
 passeggino viaggio
 pastore dormiente
+pattumiera
 pattumiera cucina
 pedali nylon
 pellicola vetro
@@ -2157,6 +2197,7 @@ penna massaggio
 penna otturazione
 penna saldatura
 pennarelli cromati
+pesi caviglie
 pet pooper
 pet portatile
 pettine
@@ -2252,6 +2293,7 @@ scrivania trucco
 scultura uccello
 seagull 1963
 seametal organizzatore
+secchio pediluvio
 secchio senza
 sega alternativa
 seggiolino rialzato
@@ -2329,6 +2371,7 @@ tangzu wan
 tappetini igienici
 tappetino cibo
 tappetino lettiera
+tappetino musicale
 tappetino sicurezza
 tappetino yoga
 tappeto forma
@@ -2338,6 +2381,7 @@ tappeto gioco
 tappeto ingresso
 tastierino rfid
 tavola sup
+tazza natalizia
 teddy lei
 teddy motors
 teddy vestito
@@ -2371,6 +2415,7 @@ torre 3
 tortiera porcellana
 tostapane elettrico
 tosuod cuscinetto
+trapano wireless
 trasportino borsa
 trasportino gatti
 trasportino pratico
